@@ -4,6 +4,7 @@ name = "vl"
 version = "0.1.0"
 
 [dependencies]
+static-ref = "0.1.0"
 stm32f100xx = "0.4.0"
 
 [dependencies.cast]

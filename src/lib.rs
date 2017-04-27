@@ -16,12 +16,15 @@
 
 #![deny(missing_docs)]
 #![deny(warnings)]
+#![feature(const_fn)]
 #![no_std]
 
 pub extern crate stm32f100xx;
 
 extern crate cast;
+extern crate static_ref;
 
+pub mod dma;
 pub mod led;
 pub mod serial;
 pub mod timer;

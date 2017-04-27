@@ -3,11 +3,14 @@
 //! - TX - PA9
 //! - RX - PA10
 
-use core::ptr;
+use core::{mem, ptr};
 
-use cast::{u16, u8};
-use stm32f100xx::{Afio, Gpioa, Rcc, Usart1};
+use cast::{u16, u32, u8};
+use static_ref::Ref;
+use stm32f100xx::interrupt::Dma1Channel4Irq;
+use stm32f100xx::{Afio, Dma1, Gpioa, Rcc, Usart1};
 
+use dma::Buffer;
 use frequency;
 
 /// Specialized `Result` type
@@ -23,7 +26,7 @@ pub struct Error {
 /// # Interrupts
 ///
 /// - `Usart1Irq` - RXNE (RX buffer not empty)
-// - Dma1Channel4 (USART1_TX) - TC (transfer complete)
+/// - Dma1Channel4 (USART1_TX) - TC (transfer complete)
 #[derive(Clone, Copy)]
 pub struct Serial<'a>(pub &'a Usart1);
 
@@ -36,7 +39,7 @@ impl<'a> Serial<'a> {
     pub fn init(
         &self,
         afio: &Afio,
-        // dma1: &Dma1,
+        dma1: &Dma1,
         gpioa: &Gpioa,
         rcc: &Rcc,
         baud_rate: u32,
@@ -44,7 +47,7 @@ impl<'a> Serial<'a> {
         let usart1 = self.0;
 
         // Power up peripherals
-        // rcc.ahbenr.modify(|_, w| unsafe { w.dma1en().bits(1) });
+        rcc.ahbenr.modify(|_, w| unsafe { w.dma1en().bits(1) });
         rcc.apb2enr
             .modify(
                 |_, w| unsafe {
@@ -79,27 +82,27 @@ impl<'a> Serial<'a> {
 
         // USART1_TX
         // Channel4: Memory++ (8-bit) -> Peripheral (8-bit)
-        // dma1.ccr4
-        //     .modify(
-        //         |_, w| unsafe {
-        //             w.mem2mem()
-        //                 .bits(0)
-        //                 .msize()
-        //                 .bits(0b00)
-        //                 .psize()
-        //                 .bits(0b00)
-        //                 .minc()
-        //                 .bits(1)
-        //                 .pinc()
-        //                 .bits(0)
-        //                 .dir()
-        //                 .bits(1)
-        //                 .en()
-        //                 .bits(0)
-        //                 .tcie()
-        //                 .bits(1)
-        //         },
-        //     );
+        dma1.ccr4
+            .modify(
+                |_, w| unsafe {
+                    w.mem2mem()
+                        .bits(0)
+                        .msize()
+                        .bits(0b00)
+                        .psize()
+                        .bits(0b00)
+                        .minc()
+                        .bits(1)
+                        .pinc()
+                        .bits(0)
+                        .dir()
+                        .bits(1)
+                        .en()
+                        .bits(0)
+                        .tcie()
+                        .bits(1)
+                },
+            );
 
         // 8N1
         usart1.cr2.write(|w| unsafe { w.stop().bits(0) });
@@ -187,5 +190,38 @@ impl<'a> Serial<'a> {
         } else {
             Err(Error { _0: () })
         }
+    }
+
+    /// Serializes the `buffer` over the serial interface using a DMA transfer
+    // FIXME this should return `Err` instead of panicking
+    pub fn write_all<B>(
+        self,
+        dma1: &Dma1,
+        buffer: Ref<Buffer<B, Dma1Channel4Irq>>,
+    ) where
+        B: AsRef<[u8]>,
+    {
+        let usart1 = self.0;
+
+        assert!(dma1.cndtr4.read().bits() == 0, "transfer in progress");
+
+        let ref_ = buffer.borrow();
+
+        {
+            let buffer = ref_.as_ref();
+            dma1.ccr4.modify(|_, w| unsafe { w.en().bits(0) });
+            dma1.cndtr4
+                .write(|w| unsafe { w.ndt().bits(u16(buffer.len()).unwrap()) });
+            dma1.cpar4
+                .write(|w| unsafe {
+                    w.bits(u32(&usart1.dr as *const _ as usize))
+                });
+            dma1.cmar4
+                .write(|w| unsafe { w.bits(u32(buffer.as_ptr() as usize)) });
+            dma1.ccr4.modify(|_, w| unsafe { w.en().bits(1) });
+        }
+
+        // keep the resource "borrowed" until it gets released in the DMA task
+        mem::forget(ref_);
     }
 }
