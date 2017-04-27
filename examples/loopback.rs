@@ -57,7 +57,7 @@ fn idle(_prio: P0) -> ! {
 
 // TASKS
 tasks!(stm32f100xx, {
-    echo: Task {
+    loopback: Task {
         interrupt: Usart1Irq,
         priority: P1,
         enabled: true,
@@ -65,7 +65,7 @@ tasks!(stm32f100xx, {
 });
 
 // Send back the received byte
-fn echo(_task: Usart1Irq, prio: P1) {
+fn loopback(_task: Usart1Irq, prio: P1) {
     let ceil = prio.as_ceiling();
 
     let usart1 = USART1.access(&prio, ceil);
@@ -79,7 +79,7 @@ fn echo(_task: Usart1Irq, prio: P1) {
             unreachable!()
         }
     } else {
-        // Only reachable through `rtfm::request(echo)`
+        // Only reachable through `rtfm::request(loopback)`
         #[cfg(debug_assertions)]
         unreachable!()
     }
