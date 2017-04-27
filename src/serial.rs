@@ -19,6 +19,11 @@ pub struct Error {
 }
 
 /// Serial interface
+///
+/// # Interrupts
+///
+/// - `Usart1Irq` - RXNE (RX buffer not empty)
+// - Dma1Channel4 (USART1_TX) - TC (transfer complete)
 #[derive(Clone, Copy)]
 pub struct Serial<'a>(pub &'a Usart1);
 
@@ -28,11 +33,6 @@ impl<'a> Serial<'a> {
     ///
     /// The serial interface will be configured to use 8 bits of data, 1 stop
     /// bit, no hardware control and to omit parity checking
-    ///
-    /// # Interrupts
-    ///
-    /// - `Usart1Irq` - RXNE (RX buffer not empty)
-    // - Dma1Channel4 (USART1_TX) - TC (transfer complete)
     pub fn init(
         &self,
         afio: &Afio,

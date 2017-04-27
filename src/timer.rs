@@ -16,6 +16,10 @@ pub struct Error {
 }
 
 /// Periodic timer
+///
+/// # Interrupts
+///
+/// - `Tim7Irq` - update event
 #[derive(Clone, Copy)]
 pub struct Timer<'a>(pub &'a Tim7);
 
@@ -23,10 +27,6 @@ impl<'a> Timer<'a> {
     /// Initializes the timer with a periodic timeout of `frequency` Hz
     ///
     /// NOTE The timer starts in a paused state
-    ///
-    /// # Interrupts
-    ///
-    /// - `Tim7Irq` - update event
     pub fn init(&self, rcc: &Rcc, frequency: u32) {
         let tim7 = self.0;
 
