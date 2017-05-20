@@ -9,7 +9,7 @@ extern crate cortex_m_rt;
 extern crate cortex_m_rtfm as rtfm;
 extern crate vl;
 
-use rtfm::{C0, C1, C16, P0, P1};
+use rtfm::{P0, P1, T0, T1, TMax};
 use vl::serial::Serial;
 use vl::stm32f100xx::interrupt::Usart1Irq;
 use vl::stm32f100xx;
@@ -38,17 +38,17 @@ peripherals!(stm32f100xx, {
 });
 
 // INITIALIZATION PHASE
-fn init(ref prio: P0, ceil: &C16) {
-    let afio = AFIO.access(prio, ceil);
-    let gpioa = GPIOA.access(prio, ceil);
-    let rcc = RCC.access(prio, ceil);
-    let usart1 = USART1.access(prio, ceil);
+fn init(ref prio: P0, thr: &TMax) {
+    let afio = AFIO.access(prio, thr);
+    let gpioa = GPIOA.access(prio, thr);
+    let rcc = RCC.access(prio, thr);
+    let usart1 = USART1.access(prio, thr);
 
     Serial(&usart1).init(&afio, &gpioa, &rcc, BAUD_RATE);
 }
 
 // IDLE LOOP
-fn idle(_prio: P0, _ceil: C0) -> ! {
+fn idle(_prio: P0, _ceil: T0) -> ! {
     // Sleep
     loop {
         rtfm::wfi();
@@ -65,8 +65,8 @@ tasks!(stm32f100xx, {
 });
 
 // Send back the received byte
-fn loopback(_task: Usart1Irq, ref prio: P1, ref ceil: C1) {
-    let usart1 = USART1.access(prio, ceil);
+fn loopback(_task: Usart1Irq, ref prio: P1, ref thr: T1) {
+    let usart1 = USART1.access(prio, thr);
     let serial = Serial(&usart1);
 
     if let Ok(byte) = serial.read() {

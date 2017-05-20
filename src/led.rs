@@ -33,18 +33,16 @@ pub fn init(gpioc: &Gpioc, rcc: &Rcc) {
     rcc.apb2enr.modify(|_, w| unsafe { w.iopcen().bits(1) });
 
     // Configure PC8 and PC9 as general purpose, push pull outputs
-    gpioc
-        .crh
-        .modify(
-            |_, w| unsafe {
-                w.mode8()
-                    .bits(0b01)
-                    .cnf8()
-                    .bits(0b00)
-                    .mode9()
-                    .bits(0b01)
-                    .cnf9()
-                    .bits(0b00)
-            },
-        )
+    gpioc.crh.modify(
+        |_, w| unsafe {
+            w.mode8()
+                .bits(0b01)
+                .cnf8()
+                .bits(0b00)
+                .mode9()
+                .bits(0b01)
+                .cnf9()
+                .bits(0b00)
+        }
+    )
 }

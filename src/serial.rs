@@ -45,36 +45,22 @@ impl<'a> Serial<'a> {
 
         // Power up peripherals
         // rcc.ahbenr.modify(|_, w| unsafe { w.dma1en().bits(1) });
-        rcc.apb2enr
-            .modify(
-                |_, w| unsafe {
-                    w.afioen()
-                        .bits(1)
-                        .usart1en()
-                        .bits(1)
-                        .iopaen()
-                        .bits(1)
-                },
-            );
+        rcc.apb2enr.modify(
+            |_, w| unsafe {
+                w.afioen().bits(1).usart1en().bits(1).iopaen().bits(1)
+            }
+        );
 
         // Use PA9 and PA10 as TX and RX
-        afio.mapr
-            .modify(|_, w| unsafe { w.usart1_remap().bits(0) });
+        afio.mapr.modify(|_, w| unsafe { w.usart1_remap().bits(0) });
 
         // Configure PA9 as alternate function, push pull output
         // Configure PA10 as input
-        gpioa
-            .crh
-            .modify(
-                |_, w| unsafe {
-                    w.cnf9()
-                        .bits(0b10)
-                        .mode9()
-                        .bits(0b10)
-                        .cnf10()
-                        .bits(0b01)
-                },
-            );
+        gpioa.crh.modify(
+            |_, w| unsafe {
+                w.cnf9().bits(0b10).mode9().bits(0b10).cnf10().bits(0b01)
+            }
+        );
 
 
         // USART1_TX
@@ -105,51 +91,42 @@ impl<'a> Serial<'a> {
         usart1.cr2.write(|w| unsafe { w.stop().bits(0) });
 
         // No CTS / RTS
-        usart1
-            .cr3
-            .write(|w| unsafe {
-                w.rtse()
-                    .bits(0)
-                    .ctse()
-                    .bits(0)
-                    .dmat()
-                    .bits(1)
-            });
+        usart1.cr3.write(
+            |w| unsafe {
+                w.rtse().bits(0).ctse().bits(0).dmat().bits(1)
+            }
+        );
 
         // Set baud rate
         let brr = u16(frequency::APB2 / baud_rate).unwrap();
         let mantissa = brr >> 4;
         let fraction = u8(brr & 0b1111).unwrap();
-        usart1
-            .brr
-            .write(
-                |w| unsafe {
-                    w.div_mantissa()
-                        .bits(mantissa)
-                        .div_fraction()
-                        .bits(fraction)
-                },
-            );
+        usart1.brr.write(
+            |w| unsafe {
+                w.div_mantissa()
+                    .bits(mantissa)
+                    .div_fraction()
+                    .bits(fraction)
+            }
+        );
 
         // Enable
-        usart1
-            .cr1
-            .write(
-                |w| unsafe {
-                    w.ue()
-                        .bits(1)
-                        .re()
-                        .bits(1)
-                        .te()
-                        .bits(1)
-                        .m()
-                        .bits(0)
-                        .pce()
-                        .bits(0)
-                        .rxneie()
-                        .bits(1)
-                },
-            );
+        usart1.cr1.write(
+            |w| unsafe {
+                w.ue()
+                    .bits(1)
+                    .re()
+                    .bits(1)
+                    .te()
+                    .bits(1)
+                    .m()
+                    .bits(0)
+                    .pce()
+                    .bits(0)
+                    .rxneie()
+                    .bits(1)
+            }
+        );
     }
 
     /// Reads a byte
@@ -164,7 +141,7 @@ impl<'a> Serial<'a> {
             Ok(
                 unsafe {
                     ptr::read_volatile(&usart1.dr as *const _ as *const u8)
-                },
+                }
             )
         } else {
             Err(Error { _0: () })

@@ -9,7 +9,7 @@ extern crate cortex_m_rt;
 extern crate cortex_m_rtfm as rtfm;
 extern crate vl;
 
-use rtfm::{C0, C1, C16, Local, P0, P1};
+use rtfm::{Local, P0, P1, T0, T1, TMax};
 use vl::stm32f100xx::interrupt::Tim7Irq;
 use vl::timer::Timer;
 use vl::{led, stm32f100xx};
@@ -34,10 +34,10 @@ peripherals!(stm32f100xx, {
 });
 
 // INITIALIZATION PHASE
-fn init(ref prio: P0, ceil: &C16) {
-    let gpioc = GPIOC.access(prio, ceil);
-    let rcc = RCC.access(prio, ceil);
-    let tim7 = TIM7.access(prio, ceil);
+fn init(ref prio: P0, thr: &TMax) {
+    let gpioc = GPIOC.access(prio, thr);
+    let rcc = RCC.access(prio, thr);
+    let tim7 = TIM7.access(prio, thr);
     let timer = Timer(&tim7);
 
     led::init(&gpioc, &rcc);
@@ -46,7 +46,7 @@ fn init(ref prio: P0, ceil: &C16) {
 }
 
 // IDLE LOOP
-fn idle(_prio: P0, _ceil: C0) -> ! {
+fn idle(_prio: P0, _thr: T0) -> ! {
     // Sleep
     loop {
         rtfm::wfi();
@@ -62,10 +62,10 @@ tasks!(stm32f100xx, {
     },
 });
 
-fn periodic(mut task: Tim7Irq, ref prio: P1, ref ceil: C1) {
+fn periodic(mut task: Tim7Irq, ref prio: P1, ref thr: T1) {
     static STATE: Local<bool, Tim7Irq> = Local::new(false);
 
-    let tim7 = TIM7.access(prio, ceil);
+    let tim7 = TIM7.access(prio, thr);
     let timer = Timer(&tim7);
 
     if timer.clear_update_flag().is_ok() {
