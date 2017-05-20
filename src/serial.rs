@@ -6,6 +6,8 @@
 use core::ptr;
 
 use cast::{u16, u8};
+use futures::future;
+use futures::{Async, Future};
 use stm32f100xx::{Afio, Gpioa, Rcc, Usart1};
 
 use frequency;
@@ -14,8 +16,12 @@ use frequency;
 pub type Result<T> = ::core::result::Result<T, Error>;
 
 /// An error
-pub struct Error {
-    _0: (),
+pub enum Error {
+    BufferOverrun,
+    ParityError,
+    WouldBlock,
+    #[doc(hidden)]
+    _Extensible,
 }
 
 /// Serial interface
@@ -144,7 +150,7 @@ impl<'a> Serial<'a> {
                 }
             )
         } else {
-            Err(Error { _0: () })
+            Err(Error::WouldBlock)
         }
     }
 
@@ -162,7 +168,22 @@ impl<'a> Serial<'a> {
             }
             Ok(())
         } else {
-            Err(Error { _0: () })
+            Err(Error::WouldBlock)
         }
     }
+}
+
+/// Reads a byte (future style)
+pub fn read<'a>(
+    serial: Serial<'a>,
+) -> impl Future<Item = u8, Error = Error> + 'a {
+    future::poll_fn(move || Ok(Async::Ready(try_nb!(serial.read()))))
+}
+
+/// Writes a byte (future style)
+pub fn write<'a>(
+    serial: Serial<'a>,
+    byte: u8,
+) -> impl Future<Item = (), Error = Error> + 'a {
+    future::poll_fn(move || Ok(Async::Ready(try_nb!(serial.write(byte)))))
 }

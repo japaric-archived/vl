@@ -14,13 +14,26 @@
 //!
 //! [i]: https://docs.rs/cortex-m-quickstart/0.1.0/cortex_m_quickstart/
 
-#![deny(missing_docs)]
+#![feature(conservative_impl_trait)]
+// #![deny(missing_docs)]
 #![deny(warnings)]
 #![no_std]
 
 pub extern crate stm32f100xx;
 
 extern crate cast;
+extern crate futures;
+
+// From tokio-core
+macro_rules! try_nb {
+    ($e:expr) => {
+        match $e {
+            Ok(t) => t,
+            Err(Error::WouldBlock) => return Ok(Async::NotReady),
+            Err(e) => return Err(e.into()),
+        }
+    }
+}
 
 pub mod led;
 pub mod serial;
