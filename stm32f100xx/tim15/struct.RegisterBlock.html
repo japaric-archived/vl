@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `RegisterBlock` struct in crate `stm32f100xx`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, RegisterBlock">
+
+    <title>stm32f100xx::tim15::RegisterBlock - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct RegisterBlock</p><div class="block items"><ul><li><a href="#fields">Fields</a></li></ul></div><p class='location'><a href='../index.html'>stm32f100xx</a>::<wbr><a href='index.html'>tim15</a></p><script>window.sidebarCurrent = {name: 'RegisterBlock', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>stm32f100xx</a>::<wbr><a href='index.html'>tim15</a>::<wbr><a class="struct" href=''>RegisterBlock</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/stm32f100xx/lib.rs.html#74665-74702' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct RegisterBlock {
+    pub cr1: <a class="struct" href="../../stm32f100xx/tim15/struct.Cr1.html" title="struct stm32f100xx::tim15::Cr1">Cr1</a>,
+    pub cr2: <a class="struct" href="../../stm32f100xx/tim15/struct.Cr2.html" title="struct stm32f100xx::tim15::Cr2">Cr2</a>,
+    pub smcr: <a class="struct" href="../../stm32f100xx/tim15/struct.Smcr.html" title="struct stm32f100xx::tim15::Smcr">Smcr</a>,
+    pub dier: <a class="struct" href="../../stm32f100xx/tim15/struct.Dier.html" title="struct stm32f100xx::tim15::Dier">Dier</a>,
+    pub sr: <a class="struct" href="../../stm32f100xx/tim15/struct.Sr.html" title="struct stm32f100xx::tim15::Sr">Sr</a>,
+    pub egr: <a class="struct" href="../../stm32f100xx/tim15/struct.Egr.html" title="struct stm32f100xx::tim15::Egr">Egr</a>,
+    pub ccmr1_output: <a class="struct" href="../../stm32f100xx/tim15/struct.Ccmr1Output.html" title="struct stm32f100xx::tim15::Ccmr1Output">Ccmr1Output</a>,
+    pub ccer: <a class="struct" href="../../stm32f100xx/tim15/struct.Ccer.html" title="struct stm32f100xx::tim15::Ccer">Ccer</a>,
+    pub cnt: <a class="struct" href="../../stm32f100xx/tim15/struct.Cnt.html" title="struct stm32f100xx::tim15::Cnt">Cnt</a>,
+    pub psc: <a class="struct" href="../../stm32f100xx/tim15/struct.Psc.html" title="struct stm32f100xx::tim15::Psc">Psc</a>,
+    pub arr: <a class="struct" href="../../stm32f100xx/tim15/struct.Arr.html" title="struct stm32f100xx::tim15::Arr">Arr</a>,
+    pub rcr: <a class="struct" href="../../stm32f100xx/tim15/struct.Rcr.html" title="struct stm32f100xx::tim15::Rcr">Rcr</a>,
+    pub ccr1: <a class="struct" href="../../stm32f100xx/tim15/struct.Ccr1.html" title="struct stm32f100xx::tim15::Ccr1">Ccr1</a>,
+    pub ccr2: <a class="struct" href="../../stm32f100xx/tim15/struct.Ccr2.html" title="struct stm32f100xx::tim15::Ccr2">Ccr2</a>,
+    pub bdtr: <a class="struct" href="../../stm32f100xx/tim15/struct.Bdtr.html" title="struct stm32f100xx::tim15::Bdtr">Bdtr</a>,
+    pub dcr: <a class="struct" href="../../stm32f100xx/tim15/struct.Dcr.html" title="struct stm32f100xx::tim15::Dcr">Dcr</a>,
+    pub dmar: <a class="struct" href="../../stm32f100xx/tim15/struct.Dmar.html" title="struct stm32f100xx::tim15::Dmar">Dmar</a>,
+    // some fields omitted
+}</pre><div class='docblock'><p>Register block</p>
+</div><h2 id='fields' class='fields'>Fields</h2><span id='structfield.cr1' class="structfield">
+                           <span id='cr1.v' class='invisible'>
+                           <code>cr1: <a class="struct" href="../../stm32f100xx/tim15/struct.Cr1.html" title="struct stm32f100xx::tim15::Cr1">Cr1</a></code>
+                           </span></span><div class='docblock'><p>0x00 - control register 1</p>
+</div><span id='structfield.cr2' class="structfield">
+                           <span id='cr2.v' class='invisible'>
+                           <code>cr2: <a class="struct" href="../../stm32f100xx/tim15/struct.Cr2.html" title="struct stm32f100xx::tim15::Cr2">Cr2</a></code>
+                           </span></span><div class='docblock'><p>0x04 - control register 2</p>
+</div><span id='structfield.smcr' class="structfield">
+                           <span id='smcr.v' class='invisible'>
+                           <code>smcr: <a class="struct" href="../../stm32f100xx/tim15/struct.Smcr.html" title="struct stm32f100xx::tim15::Smcr">Smcr</a></code>
+                           </span></span><div class='docblock'><p>0x08 - slave mode control register</p>
+</div><span id='structfield.dier' class="structfield">
+                           <span id='dier.v' class='invisible'>
+                           <code>dier: <a class="struct" href="../../stm32f100xx/tim15/struct.Dier.html" title="struct stm32f100xx::tim15::Dier">Dier</a></code>
+                           </span></span><div class='docblock'><p>0x0c - DMA/Interrupt enable register</p>
+</div><span id='structfield.sr' class="structfield">
+                           <span id='sr.v' class='invisible'>
+                           <code>sr: <a class="struct" href="../../stm32f100xx/tim15/struct.Sr.html" title="struct stm32f100xx::tim15::Sr">Sr</a></code>
+                           </span></span><div class='docblock'><p>0x10 - status register</p>
+</div><span id='structfield.egr' class="structfield">
+                           <span id='egr.v' class='invisible'>
+                           <code>egr: <a class="struct" href="../../stm32f100xx/tim15/struct.Egr.html" title="struct stm32f100xx::tim15::Egr">Egr</a></code>
+                           </span></span><div class='docblock'><p>0x14 - event generation register</p>
+</div><span id='structfield.ccmr1_output' class="structfield">
+                           <span id='ccmr1_output.v' class='invisible'>
+                           <code>ccmr1_output: <a class="struct" href="../../stm32f100xx/tim15/struct.Ccmr1Output.html" title="struct stm32f100xx::tim15::Ccmr1Output">Ccmr1Output</a></code>
+                           </span></span><div class='docblock'><p>0x18 - capture/compare mode register (output mode)</p>
+</div><span id='structfield.ccer' class="structfield">
+                           <span id='ccer.v' class='invisible'>
+                           <code>ccer: <a class="struct" href="../../stm32f100xx/tim15/struct.Ccer.html" title="struct stm32f100xx::tim15::Ccer">Ccer</a></code>
+                           </span></span><div class='docblock'><p>0x20 - capture/compare enable register</p>
+</div><span id='structfield.cnt' class="structfield">
+                           <span id='cnt.v' class='invisible'>
+                           <code>cnt: <a class="struct" href="../../stm32f100xx/tim15/struct.Cnt.html" title="struct stm32f100xx::tim15::Cnt">Cnt</a></code>
+                           </span></span><div class='docblock'><p>0x24 - counter</p>
+</div><span id='structfield.psc' class="structfield">
+                           <span id='psc.v' class='invisible'>
+                           <code>psc: <a class="struct" href="../../stm32f100xx/tim15/struct.Psc.html" title="struct stm32f100xx::tim15::Psc">Psc</a></code>
+                           </span></span><div class='docblock'><p>0x28 - prescaler</p>
+</div><span id='structfield.arr' class="structfield">
+                           <span id='arr.v' class='invisible'>
+                           <code>arr: <a class="struct" href="../../stm32f100xx/tim15/struct.Arr.html" title="struct stm32f100xx::tim15::Arr">Arr</a></code>
+                           </span></span><div class='docblock'><p>0x2c - auto-reload register</p>
+</div><span id='structfield.rcr' class="structfield">
+                           <span id='rcr.v' class='invisible'>
+                           <code>rcr: <a class="struct" href="../../stm32f100xx/tim15/struct.Rcr.html" title="struct stm32f100xx::tim15::Rcr">Rcr</a></code>
+                           </span></span><div class='docblock'><p>0x30 - repetition counter register</p>
+</div><span id='structfield.ccr1' class="structfield">
+                           <span id='ccr1.v' class='invisible'>
+                           <code>ccr1: <a class="struct" href="../../stm32f100xx/tim15/struct.Ccr1.html" title="struct stm32f100xx::tim15::Ccr1">Ccr1</a></code>
+                           </span></span><div class='docblock'><p>0x34 - capture/compare register 1</p>
+</div><span id='structfield.ccr2' class="structfield">
+                           <span id='ccr2.v' class='invisible'>
+                           <code>ccr2: <a class="struct" href="../../stm32f100xx/tim15/struct.Ccr2.html" title="struct stm32f100xx::tim15::Ccr2">Ccr2</a></code>
+                           </span></span><div class='docblock'><p>0x38 - capture/compare register 2</p>
+</div><span id='structfield.bdtr' class="structfield">
+                           <span id='bdtr.v' class='invisible'>
+                           <code>bdtr: <a class="struct" href="../../stm32f100xx/tim15/struct.Bdtr.html" title="struct stm32f100xx::tim15::Bdtr">Bdtr</a></code>
+                           </span></span><div class='docblock'><p>0x44 - break and dead-time register</p>
+</div><span id='structfield.dcr' class="structfield">
+                           <span id='dcr.v' class='invisible'>
+                           <code>dcr: <a class="struct" href="../../stm32f100xx/tim15/struct.Dcr.html" title="struct stm32f100xx::tim15::Dcr">Dcr</a></code>
+                           </span></span><div class='docblock'><p>0x48 - DMA control register</p>
+</div><span id='structfield.dmar' class="structfield">
+                           <span id='dmar.v' class='invisible'>
+                           <code>dmar: <a class="struct" href="../../stm32f100xx/tim15/struct.Dmar.html" title="struct stm32f100xx::tim15::Dmar">Dmar</a></code>
+                           </span></span><div class='docblock'><p>0x4c - DMA address for full transfer</p>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "stm32f100xx";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

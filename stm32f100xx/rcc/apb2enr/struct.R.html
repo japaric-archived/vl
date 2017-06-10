@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `R` struct in crate `stm32f100xx`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, R">
+
+    <title>stm32f100xx::rcc::apb2enr::R - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct R</p><div class="block items"><ul><li><a href="#methods">Methods</a></li></ul></div><p class='location'><a href='../../index.html'>stm32f100xx</a>::<wbr><a href='../index.html'>rcc</a>::<wbr><a href='index.html'>apb2enr</a></p><script>window.sidebarCurrent = {name: 'R', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../../index.html'>stm32f100xx</a>::<wbr><a href='../index.html'>rcc</a>::<wbr><a href='index.html'>apb2enr</a>::<wbr><a class="struct" href=''>R</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../../src/stm32f100xx/lib.rs.html#10048-10050' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct R { /* fields omitted */ }</pre><div class='docblock'><p>Value read from the register</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.R.html" title="struct stm32f100xx::rcc::apb2enr::R">R</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/stm32f100xx/lib.rs.html#10474-10630' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.bits' class="method"><span id='bits.v' class='invisible'><code>fn <a href='#method.bits' class='fnname'>bits</a>(&amp;self) -&gt; u32</code></span></h4>
+<div class='docblock'><p>Value of the register as raw bits</p>
+</div><h4 id='method.afioen' class="method"><span id='afioen.v' class='invisible'><code>fn <a href='#method.afioen' class='fnname'>afioen</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.AfioenR.html" title="struct stm32f100xx::rcc::apb2enr::AfioenR">AfioenR</a></code></span></h4>
+<div class='docblock'><p>Bit 0 - Alternate function I/O clock enable</p>
+</div><h4 id='method.iopaen' class="method"><span id='iopaen.v' class='invisible'><code>fn <a href='#method.iopaen' class='fnname'>iopaen</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.IopaenR.html" title="struct stm32f100xx::rcc::apb2enr::IopaenR">IopaenR</a></code></span></h4>
+<div class='docblock'><p>Bit 2 - I/O port A clock enable</p>
+</div><h4 id='method.iopben' class="method"><span id='iopben.v' class='invisible'><code>fn <a href='#method.iopben' class='fnname'>iopben</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.IopbenR.html" title="struct stm32f100xx::rcc::apb2enr::IopbenR">IopbenR</a></code></span></h4>
+<div class='docblock'><p>Bit 3 - I/O port B clock enable</p>
+</div><h4 id='method.iopcen' class="method"><span id='iopcen.v' class='invisible'><code>fn <a href='#method.iopcen' class='fnname'>iopcen</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.IopcenR.html" title="struct stm32f100xx::rcc::apb2enr::IopcenR">IopcenR</a></code></span></h4>
+<div class='docblock'><p>Bit 4 - I/O port C clock enable</p>
+</div><h4 id='method.iopden' class="method"><span id='iopden.v' class='invisible'><code>fn <a href='#method.iopden' class='fnname'>iopden</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.IopdenR.html" title="struct stm32f100xx::rcc::apb2enr::IopdenR">IopdenR</a></code></span></h4>
+<div class='docblock'><p>Bit 5 - I/O port D clock enable</p>
+</div><h4 id='method.iopeen' class="method"><span id='iopeen.v' class='invisible'><code>fn <a href='#method.iopeen' class='fnname'>iopeen</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.IopeenR.html" title="struct stm32f100xx::rcc::apb2enr::IopeenR">IopeenR</a></code></span></h4>
+<div class='docblock'><p>Bit 6 - I/O port E clock enable</p>
+</div><h4 id='method.iopfen' class="method"><span id='iopfen.v' class='invisible'><code>fn <a href='#method.iopfen' class='fnname'>iopfen</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.IopfenR.html" title="struct stm32f100xx::rcc::apb2enr::IopfenR">IopfenR</a></code></span></h4>
+<div class='docblock'><p>Bit 7 - I/O port F clock enable</p>
+</div><h4 id='method.iopgen' class="method"><span id='iopgen.v' class='invisible'><code>fn <a href='#method.iopgen' class='fnname'>iopgen</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.IopgenR.html" title="struct stm32f100xx::rcc::apb2enr::IopgenR">IopgenR</a></code></span></h4>
+<div class='docblock'><p>Bit 8 - I/O port G clock enable</p>
+</div><h4 id='method.adc1en' class="method"><span id='adc1en.v' class='invisible'><code>fn <a href='#method.adc1en' class='fnname'>adc1en</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.Adc1enR.html" title="struct stm32f100xx::rcc::apb2enr::Adc1enR">Adc1enR</a></code></span></h4>
+<div class='docblock'><p>Bit 9 - ADC 1 interface clock enable</p>
+</div><h4 id='method.tim1en' class="method"><span id='tim1en.v' class='invisible'><code>fn <a href='#method.tim1en' class='fnname'>tim1en</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.Tim1enR.html" title="struct stm32f100xx::rcc::apb2enr::Tim1enR">Tim1enR</a></code></span></h4>
+<div class='docblock'><p>Bit 11 - TIM1 Timer clock enable</p>
+</div><h4 id='method.spi1en' class="method"><span id='spi1en.v' class='invisible'><code>fn <a href='#method.spi1en' class='fnname'>spi1en</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.Spi1enR.html" title="struct stm32f100xx::rcc::apb2enr::Spi1enR">Spi1enR</a></code></span></h4>
+<div class='docblock'><p>Bit 12 - SPI 1 clock enable</p>
+</div><h4 id='method.usart1en' class="method"><span id='usart1en.v' class='invisible'><code>fn <a href='#method.usart1en' class='fnname'>usart1en</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.Usart1enR.html" title="struct stm32f100xx::rcc::apb2enr::Usart1enR">Usart1enR</a></code></span></h4>
+<div class='docblock'><p>Bit 14 - USART1 clock enable</p>
+</div><h4 id='method.tim15en' class="method"><span id='tim15en.v' class='invisible'><code>fn <a href='#method.tim15en' class='fnname'>tim15en</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.Tim15enR.html" title="struct stm32f100xx::rcc::apb2enr::Tim15enR">Tim15enR</a></code></span></h4>
+<div class='docblock'><p>Bit 16 - TIM15 Timer clock enable</p>
+</div><h4 id='method.tim16en' class="method"><span id='tim16en.v' class='invisible'><code>fn <a href='#method.tim16en' class='fnname'>tim16en</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.Tim16enR.html" title="struct stm32f100xx::rcc::apb2enr::Tim16enR">Tim16enR</a></code></span></h4>
+<div class='docblock'><p>Bit 17 - TIM16 Timer clock enable</p>
+</div><h4 id='method.tim17en' class="method"><span id='tim17en.v' class='invisible'><code>fn <a href='#method.tim17en' class='fnname'>tim17en</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/rcc/apb2enr/struct.Tim17enR.html" title="struct stm32f100xx::rcc::apb2enr::Tim17enR">Tim17enR</a></code></span></h4>
+<div class='docblock'><p>Bit 18 - TIM17 Timer clock enable</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../";
+        window.currentCrate = "stm32f100xx";
+    </script>
+    <script src="../../../main.js"></script>
+    <script defer src="../../../search-index.js"></script>
+</body>
+</html>

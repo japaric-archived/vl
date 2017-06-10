@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `RegisterBlock` struct in crate `stm32f100xx`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, RegisterBlock">
+
+    <title>stm32f100xx::bkp::RegisterBlock - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct RegisterBlock</p><div class="block items"><ul><li><a href="#fields">Fields</a></li></ul></div><p class='location'><a href='../index.html'>stm32f100xx</a>::<wbr><a href='index.html'>bkp</a></p><script>window.sidebarCurrent = {name: 'RegisterBlock', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>stm32f100xx</a>::<wbr><a href='index.html'>bkp</a>::<wbr><a class="struct" href=''>RegisterBlock</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/stm32f100xx/lib.rs.html#32407-32499' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct RegisterBlock {
+    pub dr1: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr1.html" title="struct stm32f100xx::bkp::Dr1">Dr1</a>,
+    pub dr2: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr2.html" title="struct stm32f100xx::bkp::Dr2">Dr2</a>,
+    pub dr3: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr3.html" title="struct stm32f100xx::bkp::Dr3">Dr3</a>,
+    pub dr4: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr4.html" title="struct stm32f100xx::bkp::Dr4">Dr4</a>,
+    pub dr5: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr5.html" title="struct stm32f100xx::bkp::Dr5">Dr5</a>,
+    pub dr6: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr6.html" title="struct stm32f100xx::bkp::Dr6">Dr6</a>,
+    pub dr7: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr7.html" title="struct stm32f100xx::bkp::Dr7">Dr7</a>,
+    pub dr8: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr8.html" title="struct stm32f100xx::bkp::Dr8">Dr8</a>,
+    pub dr9: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr9.html" title="struct stm32f100xx::bkp::Dr9">Dr9</a>,
+    pub dr10: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr10.html" title="struct stm32f100xx::bkp::Dr10">Dr10</a>,
+    pub rtccr: <a class="struct" href="../../stm32f100xx/bkp/struct.Rtccr.html" title="struct stm32f100xx::bkp::Rtccr">Rtccr</a>,
+    pub cr: <a class="struct" href="../../stm32f100xx/bkp/struct.Cr.html" title="struct stm32f100xx::bkp::Cr">Cr</a>,
+    pub csr: <a class="struct" href="../../stm32f100xx/bkp/struct.Csr.html" title="struct stm32f100xx::bkp::Csr">Csr</a>,
+    pub dr11: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr11.html" title="struct stm32f100xx::bkp::Dr11">Dr11</a>,
+    pub dr12: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr12.html" title="struct stm32f100xx::bkp::Dr12">Dr12</a>,
+    pub dr13: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr13.html" title="struct stm32f100xx::bkp::Dr13">Dr13</a>,
+    pub dr14: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr14.html" title="struct stm32f100xx::bkp::Dr14">Dr14</a>,
+    pub dr15: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr15.html" title="struct stm32f100xx::bkp::Dr15">Dr15</a>,
+    pub dr16: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr16.html" title="struct stm32f100xx::bkp::Dr16">Dr16</a>,
+    pub dr17: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr17.html" title="struct stm32f100xx::bkp::Dr17">Dr17</a>,
+    pub dr18: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr18.html" title="struct stm32f100xx::bkp::Dr18">Dr18</a>,
+    pub dr19: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr19.html" title="struct stm32f100xx::bkp::Dr19">Dr19</a>,
+    pub dr20: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr20.html" title="struct stm32f100xx::bkp::Dr20">Dr20</a>,
+    pub dr21: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr21.html" title="struct stm32f100xx::bkp::Dr21">Dr21</a>,
+    pub dr22: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr22.html" title="struct stm32f100xx::bkp::Dr22">Dr22</a>,
+    pub dr23: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr23.html" title="struct stm32f100xx::bkp::Dr23">Dr23</a>,
+    pub dr24: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr24.html" title="struct stm32f100xx::bkp::Dr24">Dr24</a>,
+    pub dr25: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr25.html" title="struct stm32f100xx::bkp::Dr25">Dr25</a>,
+    pub dr26: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr26.html" title="struct stm32f100xx::bkp::Dr26">Dr26</a>,
+    pub dr27: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr27.html" title="struct stm32f100xx::bkp::Dr27">Dr27</a>,
+    pub dr28: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr28.html" title="struct stm32f100xx::bkp::Dr28">Dr28</a>,
+    pub dr29: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr29.html" title="struct stm32f100xx::bkp::Dr29">Dr29</a>,
+    pub dr30: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr30.html" title="struct stm32f100xx::bkp::Dr30">Dr30</a>,
+    pub dr31: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr31.html" title="struct stm32f100xx::bkp::Dr31">Dr31</a>,
+    pub dr32: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr32.html" title="struct stm32f100xx::bkp::Dr32">Dr32</a>,
+    pub dr33: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr33.html" title="struct stm32f100xx::bkp::Dr33">Dr33</a>,
+    pub dr34: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr34.html" title="struct stm32f100xx::bkp::Dr34">Dr34</a>,
+    pub dr35: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr35.html" title="struct stm32f100xx::bkp::Dr35">Dr35</a>,
+    pub dr36: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr36.html" title="struct stm32f100xx::bkp::Dr36">Dr36</a>,
+    pub dr37: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr37.html" title="struct stm32f100xx::bkp::Dr37">Dr37</a>,
+    pub dr38: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr38.html" title="struct stm32f100xx::bkp::Dr38">Dr38</a>,
+    pub dr39: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr39.html" title="struct stm32f100xx::bkp::Dr39">Dr39</a>,
+    pub dr40: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr40.html" title="struct stm32f100xx::bkp::Dr40">Dr40</a>,
+    pub dr41: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr41.html" title="struct stm32f100xx::bkp::Dr41">Dr41</a>,
+    pub dr42: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr42.html" title="struct stm32f100xx::bkp::Dr42">Dr42</a>,
+    // some fields omitted
+}</pre><div class='docblock'><p>Register block</p>
+</div><h2 id='fields' class='fields'>Fields</h2><span id='structfield.dr1' class="structfield">
+                           <span id='dr1.v' class='invisible'>
+                           <code>dr1: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr1.html" title="struct stm32f100xx::bkp::Dr1">Dr1</a></code>
+                           </span></span><div class='docblock'><p>0x00 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr2' class="structfield">
+                           <span id='dr2.v' class='invisible'>
+                           <code>dr2: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr2.html" title="struct stm32f100xx::bkp::Dr2">Dr2</a></code>
+                           </span></span><div class='docblock'><p>0x04 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr3' class="structfield">
+                           <span id='dr3.v' class='invisible'>
+                           <code>dr3: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr3.html" title="struct stm32f100xx::bkp::Dr3">Dr3</a></code>
+                           </span></span><div class='docblock'><p>0x08 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr4' class="structfield">
+                           <span id='dr4.v' class='invisible'>
+                           <code>dr4: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr4.html" title="struct stm32f100xx::bkp::Dr4">Dr4</a></code>
+                           </span></span><div class='docblock'><p>0x0c - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr5' class="structfield">
+                           <span id='dr5.v' class='invisible'>
+                           <code>dr5: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr5.html" title="struct stm32f100xx::bkp::Dr5">Dr5</a></code>
+                           </span></span><div class='docblock'><p>0x10 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr6' class="structfield">
+                           <span id='dr6.v' class='invisible'>
+                           <code>dr6: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr6.html" title="struct stm32f100xx::bkp::Dr6">Dr6</a></code>
+                           </span></span><div class='docblock'><p>0x14 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr7' class="structfield">
+                           <span id='dr7.v' class='invisible'>
+                           <code>dr7: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr7.html" title="struct stm32f100xx::bkp::Dr7">Dr7</a></code>
+                           </span></span><div class='docblock'><p>0x18 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr8' class="structfield">
+                           <span id='dr8.v' class='invisible'>
+                           <code>dr8: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr8.html" title="struct stm32f100xx::bkp::Dr8">Dr8</a></code>
+                           </span></span><div class='docblock'><p>0x1c - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr9' class="structfield">
+                           <span id='dr9.v' class='invisible'>
+                           <code>dr9: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr9.html" title="struct stm32f100xx::bkp::Dr9">Dr9</a></code>
+                           </span></span><div class='docblock'><p>0x20 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr10' class="structfield">
+                           <span id='dr10.v' class='invisible'>
+                           <code>dr10: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr10.html" title="struct stm32f100xx::bkp::Dr10">Dr10</a></code>
+                           </span></span><div class='docblock'><p>0x24 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.rtccr' class="structfield">
+                           <span id='rtccr.v' class='invisible'>
+                           <code>rtccr: <a class="struct" href="../../stm32f100xx/bkp/struct.Rtccr.html" title="struct stm32f100xx::bkp::Rtccr">Rtccr</a></code>
+                           </span></span><div class='docblock'><p>0x28 - RTC clock calibration register (BKP_RTCCR)</p>
+</div><span id='structfield.cr' class="structfield">
+                           <span id='cr.v' class='invisible'>
+                           <code>cr: <a class="struct" href="../../stm32f100xx/bkp/struct.Cr.html" title="struct stm32f100xx::bkp::Cr">Cr</a></code>
+                           </span></span><div class='docblock'><p>0x2c - Backup control register (BKP_CR)</p>
+</div><span id='structfield.csr' class="structfield">
+                           <span id='csr.v' class='invisible'>
+                           <code>csr: <a class="struct" href="../../stm32f100xx/bkp/struct.Csr.html" title="struct stm32f100xx::bkp::Csr">Csr</a></code>
+                           </span></span><div class='docblock'><p>0x30 - BKP_CSR control/status register (BKP_CSR)</p>
+</div><span id='structfield.dr11' class="structfield">
+                           <span id='dr11.v' class='invisible'>
+                           <code>dr11: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr11.html" title="struct stm32f100xx::bkp::Dr11">Dr11</a></code>
+                           </span></span><div class='docblock'><p>0x3c - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr12' class="structfield">
+                           <span id='dr12.v' class='invisible'>
+                           <code>dr12: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr12.html" title="struct stm32f100xx::bkp::Dr12">Dr12</a></code>
+                           </span></span><div class='docblock'><p>0x40 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr13' class="structfield">
+                           <span id='dr13.v' class='invisible'>
+                           <code>dr13: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr13.html" title="struct stm32f100xx::bkp::Dr13">Dr13</a></code>
+                           </span></span><div class='docblock'><p>0x44 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr14' class="structfield">
+                           <span id='dr14.v' class='invisible'>
+                           <code>dr14: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr14.html" title="struct stm32f100xx::bkp::Dr14">Dr14</a></code>
+                           </span></span><div class='docblock'><p>0x48 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr15' class="structfield">
+                           <span id='dr15.v' class='invisible'>
+                           <code>dr15: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr15.html" title="struct stm32f100xx::bkp::Dr15">Dr15</a></code>
+                           </span></span><div class='docblock'><p>0x4c - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr16' class="structfield">
+                           <span id='dr16.v' class='invisible'>
+                           <code>dr16: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr16.html" title="struct stm32f100xx::bkp::Dr16">Dr16</a></code>
+                           </span></span><div class='docblock'><p>0x50 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr17' class="structfield">
+                           <span id='dr17.v' class='invisible'>
+                           <code>dr17: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr17.html" title="struct stm32f100xx::bkp::Dr17">Dr17</a></code>
+                           </span></span><div class='docblock'><p>0x54 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr18' class="structfield">
+                           <span id='dr18.v' class='invisible'>
+                           <code>dr18: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr18.html" title="struct stm32f100xx::bkp::Dr18">Dr18</a></code>
+                           </span></span><div class='docblock'><p>0x58 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr19' class="structfield">
+                           <span id='dr19.v' class='invisible'>
+                           <code>dr19: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr19.html" title="struct stm32f100xx::bkp::Dr19">Dr19</a></code>
+                           </span></span><div class='docblock'><p>0x5c - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr20' class="structfield">
+                           <span id='dr20.v' class='invisible'>
+                           <code>dr20: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr20.html" title="struct stm32f100xx::bkp::Dr20">Dr20</a></code>
+                           </span></span><div class='docblock'><p>0x60 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr21' class="structfield">
+                           <span id='dr21.v' class='invisible'>
+                           <code>dr21: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr21.html" title="struct stm32f100xx::bkp::Dr21">Dr21</a></code>
+                           </span></span><div class='docblock'><p>0x64 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr22' class="structfield">
+                           <span id='dr22.v' class='invisible'>
+                           <code>dr22: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr22.html" title="struct stm32f100xx::bkp::Dr22">Dr22</a></code>
+                           </span></span><div class='docblock'><p>0x68 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr23' class="structfield">
+                           <span id='dr23.v' class='invisible'>
+                           <code>dr23: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr23.html" title="struct stm32f100xx::bkp::Dr23">Dr23</a></code>
+                           </span></span><div class='docblock'><p>0x6c - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr24' class="structfield">
+                           <span id='dr24.v' class='invisible'>
+                           <code>dr24: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr24.html" title="struct stm32f100xx::bkp::Dr24">Dr24</a></code>
+                           </span></span><div class='docblock'><p>0x70 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr25' class="structfield">
+                           <span id='dr25.v' class='invisible'>
+                           <code>dr25: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr25.html" title="struct stm32f100xx::bkp::Dr25">Dr25</a></code>
+                           </span></span><div class='docblock'><p>0x74 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr26' class="structfield">
+                           <span id='dr26.v' class='invisible'>
+                           <code>dr26: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr26.html" title="struct stm32f100xx::bkp::Dr26">Dr26</a></code>
+                           </span></span><div class='docblock'><p>0x78 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr27' class="structfield">
+                           <span id='dr27.v' class='invisible'>
+                           <code>dr27: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr27.html" title="struct stm32f100xx::bkp::Dr27">Dr27</a></code>
+                           </span></span><div class='docblock'><p>0x7c - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr28' class="structfield">
+                           <span id='dr28.v' class='invisible'>
+                           <code>dr28: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr28.html" title="struct stm32f100xx::bkp::Dr28">Dr28</a></code>
+                           </span></span><div class='docblock'><p>0x80 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr29' class="structfield">
+                           <span id='dr29.v' class='invisible'>
+                           <code>dr29: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr29.html" title="struct stm32f100xx::bkp::Dr29">Dr29</a></code>
+                           </span></span><div class='docblock'><p>0x84 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr30' class="structfield">
+                           <span id='dr30.v' class='invisible'>
+                           <code>dr30: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr30.html" title="struct stm32f100xx::bkp::Dr30">Dr30</a></code>
+                           </span></span><div class='docblock'><p>0x88 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr31' class="structfield">
+                           <span id='dr31.v' class='invisible'>
+                           <code>dr31: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr31.html" title="struct stm32f100xx::bkp::Dr31">Dr31</a></code>
+                           </span></span><div class='docblock'><p>0x8c - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr32' class="structfield">
+                           <span id='dr32.v' class='invisible'>
+                           <code>dr32: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr32.html" title="struct stm32f100xx::bkp::Dr32">Dr32</a></code>
+                           </span></span><div class='docblock'><p>0x90 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr33' class="structfield">
+                           <span id='dr33.v' class='invisible'>
+                           <code>dr33: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr33.html" title="struct stm32f100xx::bkp::Dr33">Dr33</a></code>
+                           </span></span><div class='docblock'><p>0x94 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr34' class="structfield">
+                           <span id='dr34.v' class='invisible'>
+                           <code>dr34: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr34.html" title="struct stm32f100xx::bkp::Dr34">Dr34</a></code>
+                           </span></span><div class='docblock'><p>0x98 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr35' class="structfield">
+                           <span id='dr35.v' class='invisible'>
+                           <code>dr35: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr35.html" title="struct stm32f100xx::bkp::Dr35">Dr35</a></code>
+                           </span></span><div class='docblock'><p>0x9c - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr36' class="structfield">
+                           <span id='dr36.v' class='invisible'>
+                           <code>dr36: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr36.html" title="struct stm32f100xx::bkp::Dr36">Dr36</a></code>
+                           </span></span><div class='docblock'><p>0xa0 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr37' class="structfield">
+                           <span id='dr37.v' class='invisible'>
+                           <code>dr37: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr37.html" title="struct stm32f100xx::bkp::Dr37">Dr37</a></code>
+                           </span></span><div class='docblock'><p>0xa4 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr38' class="structfield">
+                           <span id='dr38.v' class='invisible'>
+                           <code>dr38: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr38.html" title="struct stm32f100xx::bkp::Dr38">Dr38</a></code>
+                           </span></span><div class='docblock'><p>0xa8 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr39' class="structfield">
+                           <span id='dr39.v' class='invisible'>
+                           <code>dr39: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr39.html" title="struct stm32f100xx::bkp::Dr39">Dr39</a></code>
+                           </span></span><div class='docblock'><p>0xac - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr40' class="structfield">
+                           <span id='dr40.v' class='invisible'>
+                           <code>dr40: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr40.html" title="struct stm32f100xx::bkp::Dr40">Dr40</a></code>
+                           </span></span><div class='docblock'><p>0xb0 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr41' class="structfield">
+                           <span id='dr41.v' class='invisible'>
+                           <code>dr41: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr41.html" title="struct stm32f100xx::bkp::Dr41">Dr41</a></code>
+                           </span></span><div class='docblock'><p>0xb4 - Backup data register (BKP_DR)</p>
+</div><span id='structfield.dr42' class="structfield">
+                           <span id='dr42.v' class='invisible'>
+                           <code>dr42: <a class="struct" href="../../stm32f100xx/bkp/struct.Dr42.html" title="struct stm32f100xx::bkp::Dr42">Dr42</a></code>
+                           </span></span><div class='docblock'><p>0xb8 - Backup data register (BKP_DR)</p>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "stm32f100xx";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

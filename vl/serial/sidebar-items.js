@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Error","An error"],["Serial","Serial interface"]],"type":[["Result","Specialized `Result` type"]]});

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Handlers` struct in crate `stm32f100xx`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Handlers">
+
+    <title>stm32f100xx::interrupt::Handlers - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct Handlers</p><div class="block items"><ul><li><a href="#fields">Fields</a></li></ul></div><p class='location'><a href='../index.html'>stm32f100xx</a>::<wbr><a href='index.html'>interrupt</a></p><script>window.sidebarCurrent = {name: 'Handlers', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>stm32f100xx</a>::<wbr><a href='index.html'>interrupt</a>::<wbr><a class="struct" href=''>Handlers</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/stm32f100xx/lib.rs.html#586-697' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct Handlers {
+    pub WwdgIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.WwdgIrq.html" title="struct stm32f100xx::interrupt::WwdgIrq">WwdgIrq</a>),
+    pub PvdIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.PvdIrq.html" title="struct stm32f100xx::interrupt::PvdIrq">PvdIrq</a>),
+    pub TamperStampIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.TamperStampIrq.html" title="struct stm32f100xx::interrupt::TamperStampIrq">TamperStampIrq</a>),
+    pub RtcWkupIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.RtcWkupIrq.html" title="struct stm32f100xx::interrupt::RtcWkupIrq">RtcWkupIrq</a>),
+    pub FlashIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.FlashIrq.html" title="struct stm32f100xx::interrupt::FlashIrq">FlashIrq</a>),
+    pub RccIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.RccIrq.html" title="struct stm32f100xx::interrupt::RccIrq">RccIrq</a>),
+    pub Exti0Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Exti0Irq.html" title="struct stm32f100xx::interrupt::Exti0Irq">Exti0Irq</a>),
+    pub Exti1Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Exti1Irq.html" title="struct stm32f100xx::interrupt::Exti1Irq">Exti1Irq</a>),
+    pub Exti2Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Exti2Irq.html" title="struct stm32f100xx::interrupt::Exti2Irq">Exti2Irq</a>),
+    pub Exti3Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Exti3Irq.html" title="struct stm32f100xx::interrupt::Exti3Irq">Exti3Irq</a>),
+    pub Exti4Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Exti4Irq.html" title="struct stm32f100xx::interrupt::Exti4Irq">Exti4Irq</a>),
+    pub Dma1Channel1Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma1Channel1Irq.html" title="struct stm32f100xx::interrupt::Dma1Channel1Irq">Dma1Channel1Irq</a>),
+    pub Dma1Channel2Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma1Channel2Irq.html" title="struct stm32f100xx::interrupt::Dma1Channel2Irq">Dma1Channel2Irq</a>),
+    pub Dma1Channel3Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma1Channel3Irq.html" title="struct stm32f100xx::interrupt::Dma1Channel3Irq">Dma1Channel3Irq</a>),
+    pub Dma1Channel4Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma1Channel4Irq.html" title="struct stm32f100xx::interrupt::Dma1Channel4Irq">Dma1Channel4Irq</a>),
+    pub Dma1Channel5Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma1Channel5Irq.html" title="struct stm32f100xx::interrupt::Dma1Channel5Irq">Dma1Channel5Irq</a>),
+    pub Dma1Channel6Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma1Channel6Irq.html" title="struct stm32f100xx::interrupt::Dma1Channel6Irq">Dma1Channel6Irq</a>),
+    pub Dma1Channel7Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma1Channel7Irq.html" title="struct stm32f100xx::interrupt::Dma1Channel7Irq">Dma1Channel7Irq</a>),
+    pub AdcIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.AdcIrq.html" title="struct stm32f100xx::interrupt::AdcIrq">AdcIrq</a>),
+    pub _reserved0: [<a class="enum" href="../../cortex_m/enum.Reserved.html" title="enum cortex_m::Reserved">Reserved</a>; 4],
+    pub Exti95Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Exti95Irq.html" title="struct stm32f100xx::interrupt::Exti95Irq">Exti95Irq</a>),
+    pub Tim1BrkTim15Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim1BrkTim15Irq.html" title="struct stm32f100xx::interrupt::Tim1BrkTim15Irq">Tim1BrkTim15Irq</a>),
+    pub Tim1UpTim16Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim1UpTim16Irq.html" title="struct stm32f100xx::interrupt::Tim1UpTim16Irq">Tim1UpTim16Irq</a>),
+    pub Tim1TrgComTim17Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim1TrgComTim17Irq.html" title="struct stm32f100xx::interrupt::Tim1TrgComTim17Irq">Tim1TrgComTim17Irq</a>),
+    pub Tim1CcIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim1CcIrq.html" title="struct stm32f100xx::interrupt::Tim1CcIrq">Tim1CcIrq</a>),
+    pub Tim2Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim2Irq.html" title="struct stm32f100xx::interrupt::Tim2Irq">Tim2Irq</a>),
+    pub Tim3Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim3Irq.html" title="struct stm32f100xx::interrupt::Tim3Irq">Tim3Irq</a>),
+    pub Tim4Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim4Irq.html" title="struct stm32f100xx::interrupt::Tim4Irq">Tim4Irq</a>),
+    pub I2c1EvIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.I2c1EvIrq.html" title="struct stm32f100xx::interrupt::I2c1EvIrq">I2c1EvIrq</a>),
+    pub I2c1ErIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.I2c1ErIrq.html" title="struct stm32f100xx::interrupt::I2c1ErIrq">I2c1ErIrq</a>),
+    pub I2c2EvIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.I2c2EvIrq.html" title="struct stm32f100xx::interrupt::I2c2EvIrq">I2c2EvIrq</a>),
+    pub I2c2ErIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.I2c2ErIrq.html" title="struct stm32f100xx::interrupt::I2c2ErIrq">I2c2ErIrq</a>),
+    pub Spi1Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Spi1Irq.html" title="struct stm32f100xx::interrupt::Spi1Irq">Spi1Irq</a>),
+    pub Spi2Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Spi2Irq.html" title="struct stm32f100xx::interrupt::Spi2Irq">Spi2Irq</a>),
+    pub Usart1Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Usart1Irq.html" title="struct stm32f100xx::interrupt::Usart1Irq">Usart1Irq</a>),
+    pub Usart2Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Usart2Irq.html" title="struct stm32f100xx::interrupt::Usart2Irq">Usart2Irq</a>),
+    pub Usart3Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Usart3Irq.html" title="struct stm32f100xx::interrupt::Usart3Irq">Usart3Irq</a>),
+    pub Exti1510Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Exti1510Irq.html" title="struct stm32f100xx::interrupt::Exti1510Irq">Exti1510Irq</a>),
+    pub RtcalarmIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.RtcalarmIrq.html" title="struct stm32f100xx::interrupt::RtcalarmIrq">RtcalarmIrq</a>),
+    pub CecIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.CecIrq.html" title="struct stm32f100xx::interrupt::CecIrq">CecIrq</a>),
+    pub Tim12Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim12Irq.html" title="struct stm32f100xx::interrupt::Tim12Irq">Tim12Irq</a>),
+    pub Tim13Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim13Irq.html" title="struct stm32f100xx::interrupt::Tim13Irq">Tim13Irq</a>),
+    pub _reserved1: [<a class="enum" href="../../cortex_m/enum.Reserved.html" title="enum cortex_m::Reserved">Reserved</a>; 3],
+    pub FsmcIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.FsmcIrq.html" title="struct stm32f100xx::interrupt::FsmcIrq">FsmcIrq</a>),
+    pub _reserved2: [<a class="enum" href="../../cortex_m/enum.Reserved.html" title="enum cortex_m::Reserved">Reserved</a>; 1],
+    pub Tim5Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim5Irq.html" title="struct stm32f100xx::interrupt::Tim5Irq">Tim5Irq</a>),
+    pub Spi3Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Spi3Irq.html" title="struct stm32f100xx::interrupt::Spi3Irq">Spi3Irq</a>),
+    pub Uart4Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Uart4Irq.html" title="struct stm32f100xx::interrupt::Uart4Irq">Uart4Irq</a>),
+    pub Uart5Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Uart5Irq.html" title="struct stm32f100xx::interrupt::Uart5Irq">Uart5Irq</a>),
+    pub Tim6DacIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim6DacIrq.html" title="struct stm32f100xx::interrupt::Tim6DacIrq">Tim6DacIrq</a>),
+    pub Tim7Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim7Irq.html" title="struct stm32f100xx::interrupt::Tim7Irq">Tim7Irq</a>),
+    pub Dma2Channel1Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma2Channel1Irq.html" title="struct stm32f100xx::interrupt::Dma2Channel1Irq">Dma2Channel1Irq</a>),
+    pub Dma2Channel2Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma2Channel2Irq.html" title="struct stm32f100xx::interrupt::Dma2Channel2Irq">Dma2Channel2Irq</a>),
+    pub Dma2Channel3Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma2Channel3Irq.html" title="struct stm32f100xx::interrupt::Dma2Channel3Irq">Dma2Channel3Irq</a>),
+    pub Dma2Channel45Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma2Channel45Irq.html" title="struct stm32f100xx::interrupt::Dma2Channel45Irq">Dma2Channel45Irq</a>),
+}</pre><div class='docblock'><p>Interrupt handlers</p>
+</div><h2 id='fields' class='fields'>Fields</h2><span id='structfield.WwdgIrq' class="structfield">
+                           <span id='WwdgIrq.v' class='invisible'>
+                           <code>WwdgIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.WwdgIrq.html" title="struct stm32f100xx::interrupt::WwdgIrq">WwdgIrq</a>)</code>
+                           </span></span><div class='docblock'><p>0 - Window Watchdog interrupt</p>
+</div><span id='structfield.PvdIrq' class="structfield">
+                           <span id='PvdIrq.v' class='invisible'>
+                           <code>PvdIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.PvdIrq.html" title="struct stm32f100xx::interrupt::PvdIrq">PvdIrq</a>)</code>
+                           </span></span><div class='docblock'><p>1 - PVD through EXTI line detection interrupt</p>
+</div><span id='structfield.TamperStampIrq' class="structfield">
+                           <span id='TamperStampIrq.v' class='invisible'>
+                           <code>TamperStampIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.TamperStampIrq.html" title="struct stm32f100xx::interrupt::TamperStampIrq">TamperStampIrq</a>)</code>
+                           </span></span><div class='docblock'><p>2 - Tamper and TimeStamp through EXTI line interrupts</p>
+</div><span id='structfield.RtcWkupIrq' class="structfield">
+                           <span id='RtcWkupIrq.v' class='invisible'>
+                           <code>RtcWkupIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.RtcWkupIrq.html" title="struct stm32f100xx::interrupt::RtcWkupIrq">RtcWkupIrq</a>)</code>
+                           </span></span><div class='docblock'><p>3 - RTC Wakeup through EXTI line interrupt</p>
+</div><span id='structfield.FlashIrq' class="structfield">
+                           <span id='FlashIrq.v' class='invisible'>
+                           <code>FlashIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.FlashIrq.html" title="struct stm32f100xx::interrupt::FlashIrq">FlashIrq</a>)</code>
+                           </span></span><div class='docblock'><p>4 - Flash global interrupt</p>
+</div><span id='structfield.RccIrq' class="structfield">
+                           <span id='RccIrq.v' class='invisible'>
+                           <code>RccIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.RccIrq.html" title="struct stm32f100xx::interrupt::RccIrq">RccIrq</a>)</code>
+                           </span></span><div class='docblock'><p>5 - RCC global interrupt</p>
+</div><span id='structfield.Exti0Irq' class="structfield">
+                           <span id='Exti0Irq.v' class='invisible'>
+                           <code>Exti0Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Exti0Irq.html" title="struct stm32f100xx::interrupt::Exti0Irq">Exti0Irq</a>)</code>
+                           </span></span><div class='docblock'><p>6 - EXTI Line0 interrupt</p>
+</div><span id='structfield.Exti1Irq' class="structfield">
+                           <span id='Exti1Irq.v' class='invisible'>
+                           <code>Exti1Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Exti1Irq.html" title="struct stm32f100xx::interrupt::Exti1Irq">Exti1Irq</a>)</code>
+                           </span></span><div class='docblock'><p>7 - EXTI Line1 interrupt</p>
+</div><span id='structfield.Exti2Irq' class="structfield">
+                           <span id='Exti2Irq.v' class='invisible'>
+                           <code>Exti2Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Exti2Irq.html" title="struct stm32f100xx::interrupt::Exti2Irq">Exti2Irq</a>)</code>
+                           </span></span><div class='docblock'><p>8 - EXTI Line2 interrupt</p>
+</div><span id='structfield.Exti3Irq' class="structfield">
+                           <span id='Exti3Irq.v' class='invisible'>
+                           <code>Exti3Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Exti3Irq.html" title="struct stm32f100xx::interrupt::Exti3Irq">Exti3Irq</a>)</code>
+                           </span></span><div class='docblock'><p>9 - EXTI Line3 interrupt</p>
+</div><span id='structfield.Exti4Irq' class="structfield">
+                           <span id='Exti4Irq.v' class='invisible'>
+                           <code>Exti4Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Exti4Irq.html" title="struct stm32f100xx::interrupt::Exti4Irq">Exti4Irq</a>)</code>
+                           </span></span><div class='docblock'><p>10 - EXTI Line4 interrupt</p>
+</div><span id='structfield.Dma1Channel1Irq' class="structfield">
+                           <span id='Dma1Channel1Irq.v' class='invisible'>
+                           <code>Dma1Channel1Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma1Channel1Irq.html" title="struct stm32f100xx::interrupt::Dma1Channel1Irq">Dma1Channel1Irq</a>)</code>
+                           </span></span><div class='docblock'><p>11 - DMA1 Channel1 global interrupt</p>
+</div><span id='structfield.Dma1Channel2Irq' class="structfield">
+                           <span id='Dma1Channel2Irq.v' class='invisible'>
+                           <code>Dma1Channel2Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma1Channel2Irq.html" title="struct stm32f100xx::interrupt::Dma1Channel2Irq">Dma1Channel2Irq</a>)</code>
+                           </span></span><div class='docblock'><p>12 - DMA1 Channel2 global interrupt</p>
+</div><span id='structfield.Dma1Channel3Irq' class="structfield">
+                           <span id='Dma1Channel3Irq.v' class='invisible'>
+                           <code>Dma1Channel3Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma1Channel3Irq.html" title="struct stm32f100xx::interrupt::Dma1Channel3Irq">Dma1Channel3Irq</a>)</code>
+                           </span></span><div class='docblock'><p>13 - DMA1 Channel3 global interrupt</p>
+</div><span id='structfield.Dma1Channel4Irq' class="structfield">
+                           <span id='Dma1Channel4Irq.v' class='invisible'>
+                           <code>Dma1Channel4Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma1Channel4Irq.html" title="struct stm32f100xx::interrupt::Dma1Channel4Irq">Dma1Channel4Irq</a>)</code>
+                           </span></span><div class='docblock'><p>14 - DMA1 Channel4 global interrupt</p>
+</div><span id='structfield.Dma1Channel5Irq' class="structfield">
+                           <span id='Dma1Channel5Irq.v' class='invisible'>
+                           <code>Dma1Channel5Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma1Channel5Irq.html" title="struct stm32f100xx::interrupt::Dma1Channel5Irq">Dma1Channel5Irq</a>)</code>
+                           </span></span><div class='docblock'><p>15 - DMA1 Channel5 global interrupt</p>
+</div><span id='structfield.Dma1Channel6Irq' class="structfield">
+                           <span id='Dma1Channel6Irq.v' class='invisible'>
+                           <code>Dma1Channel6Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma1Channel6Irq.html" title="struct stm32f100xx::interrupt::Dma1Channel6Irq">Dma1Channel6Irq</a>)</code>
+                           </span></span><div class='docblock'><p>16 - DMA1 Channel6 global interrupt</p>
+</div><span id='structfield.Dma1Channel7Irq' class="structfield">
+                           <span id='Dma1Channel7Irq.v' class='invisible'>
+                           <code>Dma1Channel7Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma1Channel7Irq.html" title="struct stm32f100xx::interrupt::Dma1Channel7Irq">Dma1Channel7Irq</a>)</code>
+                           </span></span><div class='docblock'><p>17 - DMA1 Channel7 global interrupt</p>
+</div><span id='structfield.AdcIrq' class="structfield">
+                           <span id='AdcIrq.v' class='invisible'>
+                           <code>AdcIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.AdcIrq.html" title="struct stm32f100xx::interrupt::AdcIrq">AdcIrq</a>)</code>
+                           </span></span><div class='docblock'><p>18 - ADC1 global interrupt</p>
+</div><span id='structfield._reserved0' class="structfield">
+                           <span id='_reserved0.v' class='invisible'>
+                           <code>_reserved0: [<a class="enum" href="../../cortex_m/enum.Reserved.html" title="enum cortex_m::Reserved">Reserved</a>; 4]</code>
+                           </span></span><div class='docblock'><p>Reserved spot in the vector table</p>
+</div><span id='structfield.Exti95Irq' class="structfield">
+                           <span id='Exti95Irq.v' class='invisible'>
+                           <code>Exti95Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Exti95Irq.html" title="struct stm32f100xx::interrupt::Exti95Irq">Exti95Irq</a>)</code>
+                           </span></span><div class='docblock'><p>23 - EXTI Line[9:5] interrupts</p>
+</div><span id='structfield.Tim1BrkTim15Irq' class="structfield">
+                           <span id='Tim1BrkTim15Irq.v' class='invisible'>
+                           <code>Tim1BrkTim15Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim1BrkTim15Irq.html" title="struct stm32f100xx::interrupt::Tim1BrkTim15Irq">Tim1BrkTim15Irq</a>)</code>
+                           </span></span><div class='docblock'><p>24 - TIM1 Break interrupt and TIM15 global interrupt</p>
+</div><span id='structfield.Tim1UpTim16Irq' class="structfield">
+                           <span id='Tim1UpTim16Irq.v' class='invisible'>
+                           <code>Tim1UpTim16Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim1UpTim16Irq.html" title="struct stm32f100xx::interrupt::Tim1UpTim16Irq">Tim1UpTim16Irq</a>)</code>
+                           </span></span><div class='docblock'><p>25 - TIM1 Update interrupt and TIM16 global interrupt</p>
+</div><span id='structfield.Tim1TrgComTim17Irq' class="structfield">
+                           <span id='Tim1TrgComTim17Irq.v' class='invisible'>
+                           <code>Tim1TrgComTim17Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim1TrgComTim17Irq.html" title="struct stm32f100xx::interrupt::Tim1TrgComTim17Irq">Tim1TrgComTim17Irq</a>)</code>
+                           </span></span><div class='docblock'><p>26 - TIM1 Trigger and Commutation interrupts and TIM17 global interrupt</p>
+</div><span id='structfield.Tim1CcIrq' class="structfield">
+                           <span id='Tim1CcIrq.v' class='invisible'>
+                           <code>Tim1CcIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim1CcIrq.html" title="struct stm32f100xx::interrupt::Tim1CcIrq">Tim1CcIrq</a>)</code>
+                           </span></span><div class='docblock'><p>27 - TIM1 Capture Compare interrupt</p>
+</div><span id='structfield.Tim2Irq' class="structfield">
+                           <span id='Tim2Irq.v' class='invisible'>
+                           <code>Tim2Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim2Irq.html" title="struct stm32f100xx::interrupt::Tim2Irq">Tim2Irq</a>)</code>
+                           </span></span><div class='docblock'><p>28 - TIM2 global interrupt</p>
+</div><span id='structfield.Tim3Irq' class="structfield">
+                           <span id='Tim3Irq.v' class='invisible'>
+                           <code>Tim3Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim3Irq.html" title="struct stm32f100xx::interrupt::Tim3Irq">Tim3Irq</a>)</code>
+                           </span></span><div class='docblock'><p>29 - TIM3 global interrupt</p>
+</div><span id='structfield.Tim4Irq' class="structfield">
+                           <span id='Tim4Irq.v' class='invisible'>
+                           <code>Tim4Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim4Irq.html" title="struct stm32f100xx::interrupt::Tim4Irq">Tim4Irq</a>)</code>
+                           </span></span><div class='docblock'><p>30 - TIM4 global interrupt</p>
+</div><span id='structfield.I2c1EvIrq' class="structfield">
+                           <span id='I2c1EvIrq.v' class='invisible'>
+                           <code>I2c1EvIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.I2c1EvIrq.html" title="struct stm32f100xx::interrupt::I2c1EvIrq">I2c1EvIrq</a>)</code>
+                           </span></span><div class='docblock'><p>31 - I2C1 event interrupt</p>
+</div><span id='structfield.I2c1ErIrq' class="structfield">
+                           <span id='I2c1ErIrq.v' class='invisible'>
+                           <code>I2c1ErIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.I2c1ErIrq.html" title="struct stm32f100xx::interrupt::I2c1ErIrq">I2c1ErIrq</a>)</code>
+                           </span></span><div class='docblock'><p>32 - I2C1 error interrupt</p>
+</div><span id='structfield.I2c2EvIrq' class="structfield">
+                           <span id='I2c2EvIrq.v' class='invisible'>
+                           <code>I2c2EvIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.I2c2EvIrq.html" title="struct stm32f100xx::interrupt::I2c2EvIrq">I2c2EvIrq</a>)</code>
+                           </span></span><div class='docblock'><p>33 - I2C2 event interrupt</p>
+</div><span id='structfield.I2c2ErIrq' class="structfield">
+                           <span id='I2c2ErIrq.v' class='invisible'>
+                           <code>I2c2ErIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.I2c2ErIrq.html" title="struct stm32f100xx::interrupt::I2c2ErIrq">I2c2ErIrq</a>)</code>
+                           </span></span><div class='docblock'><p>34 - I2C2 error interrupt</p>
+</div><span id='structfield.Spi1Irq' class="structfield">
+                           <span id='Spi1Irq.v' class='invisible'>
+                           <code>Spi1Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Spi1Irq.html" title="struct stm32f100xx::interrupt::Spi1Irq">Spi1Irq</a>)</code>
+                           </span></span><div class='docblock'><p>35 - SPI1 global interrupt</p>
+</div><span id='structfield.Spi2Irq' class="structfield">
+                           <span id='Spi2Irq.v' class='invisible'>
+                           <code>Spi2Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Spi2Irq.html" title="struct stm32f100xx::interrupt::Spi2Irq">Spi2Irq</a>)</code>
+                           </span></span><div class='docblock'><p>36 - SPI2 global interrupt</p>
+</div><span id='structfield.Usart1Irq' class="structfield">
+                           <span id='Usart1Irq.v' class='invisible'>
+                           <code>Usart1Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Usart1Irq.html" title="struct stm32f100xx::interrupt::Usart1Irq">Usart1Irq</a>)</code>
+                           </span></span><div class='docblock'><p>37 - USART1 global interrupt</p>
+</div><span id='structfield.Usart2Irq' class="structfield">
+                           <span id='Usart2Irq.v' class='invisible'>
+                           <code>Usart2Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Usart2Irq.html" title="struct stm32f100xx::interrupt::Usart2Irq">Usart2Irq</a>)</code>
+                           </span></span><div class='docblock'><p>38 - USART2 global interrupt</p>
+</div><span id='structfield.Usart3Irq' class="structfield">
+                           <span id='Usart3Irq.v' class='invisible'>
+                           <code>Usart3Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Usart3Irq.html" title="struct stm32f100xx::interrupt::Usart3Irq">Usart3Irq</a>)</code>
+                           </span></span><div class='docblock'><p>39 - USART3 global interrupt</p>
+</div><span id='structfield.Exti1510Irq' class="structfield">
+                           <span id='Exti1510Irq.v' class='invisible'>
+                           <code>Exti1510Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Exti1510Irq.html" title="struct stm32f100xx::interrupt::Exti1510Irq">Exti1510Irq</a>)</code>
+                           </span></span><div class='docblock'><p>40 - EXTI Line[15:10] interrupts</p>
+</div><span id='structfield.RtcalarmIrq' class="structfield">
+                           <span id='RtcalarmIrq.v' class='invisible'>
+                           <code>RtcalarmIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.RtcalarmIrq.html" title="struct stm32f100xx::interrupt::RtcalarmIrq">RtcalarmIrq</a>)</code>
+                           </span></span><div class='docblock'><p>41 - RTC Alarms through EXTI line interrupt</p>
+</div><span id='structfield.CecIrq' class="structfield">
+                           <span id='CecIrq.v' class='invisible'>
+                           <code>CecIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.CecIrq.html" title="struct stm32f100xx::interrupt::CecIrq">CecIrq</a>)</code>
+                           </span></span><div class='docblock'><p>42 - CEC global interrupt</p>
+</div><span id='structfield.Tim12Irq' class="structfield">
+                           <span id='Tim12Irq.v' class='invisible'>
+                           <code>Tim12Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim12Irq.html" title="struct stm32f100xx::interrupt::Tim12Irq">Tim12Irq</a>)</code>
+                           </span></span><div class='docblock'><p>43 - TIM12 global interrupt</p>
+</div><span id='structfield.Tim13Irq' class="structfield">
+                           <span id='Tim13Irq.v' class='invisible'>
+                           <code>Tim13Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim13Irq.html" title="struct stm32f100xx::interrupt::Tim13Irq">Tim13Irq</a>)</code>
+                           </span></span><div class='docblock'><p>44 - TIM13 global interrupt</p>
+</div><span id='structfield._reserved1' class="structfield">
+                           <span id='_reserved1.v' class='invisible'>
+                           <code>_reserved1: [<a class="enum" href="../../cortex_m/enum.Reserved.html" title="enum cortex_m::Reserved">Reserved</a>; 3]</code>
+                           </span></span><div class='docblock'><p>Reserved spot in the vector table</p>
+</div><span id='structfield.FsmcIrq' class="structfield">
+                           <span id='FsmcIrq.v' class='invisible'>
+                           <code>FsmcIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.FsmcIrq.html" title="struct stm32f100xx::interrupt::FsmcIrq">FsmcIrq</a>)</code>
+                           </span></span><div class='docblock'><p>48 - FSMC global interrupt</p>
+</div><span id='structfield._reserved2' class="structfield">
+                           <span id='_reserved2.v' class='invisible'>
+                           <code>_reserved2: [<a class="enum" href="../../cortex_m/enum.Reserved.html" title="enum cortex_m::Reserved">Reserved</a>; 1]</code>
+                           </span></span><div class='docblock'><p>Reserved spot in the vector table</p>
+</div><span id='structfield.Tim5Irq' class="structfield">
+                           <span id='Tim5Irq.v' class='invisible'>
+                           <code>Tim5Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim5Irq.html" title="struct stm32f100xx::interrupt::Tim5Irq">Tim5Irq</a>)</code>
+                           </span></span><div class='docblock'><p>50 - TIM5 global interrupt</p>
+</div><span id='structfield.Spi3Irq' class="structfield">
+                           <span id='Spi3Irq.v' class='invisible'>
+                           <code>Spi3Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Spi3Irq.html" title="struct stm32f100xx::interrupt::Spi3Irq">Spi3Irq</a>)</code>
+                           </span></span><div class='docblock'><p>51 - SPI3 global interrupt</p>
+</div><span id='structfield.Uart4Irq' class="structfield">
+                           <span id='Uart4Irq.v' class='invisible'>
+                           <code>Uart4Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Uart4Irq.html" title="struct stm32f100xx::interrupt::Uart4Irq">Uart4Irq</a>)</code>
+                           </span></span><div class='docblock'><p>52 - UART4 global interrupt</p>
+</div><span id='structfield.Uart5Irq' class="structfield">
+                           <span id='Uart5Irq.v' class='invisible'>
+                           <code>Uart5Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Uart5Irq.html" title="struct stm32f100xx::interrupt::Uart5Irq">Uart5Irq</a>)</code>
+                           </span></span><div class='docblock'><p>53 - UART5 global interrupt</p>
+</div><span id='structfield.Tim6DacIrq' class="structfield">
+                           <span id='Tim6DacIrq.v' class='invisible'>
+                           <code>Tim6DacIrq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim6DacIrq.html" title="struct stm32f100xx::interrupt::Tim6DacIrq">Tim6DacIrq</a>)</code>
+                           </span></span><div class='docblock'><p>54 - TIM6 global and DAC underrun interrupts</p>
+</div><span id='structfield.Tim7Irq' class="structfield">
+                           <span id='Tim7Irq.v' class='invisible'>
+                           <code>Tim7Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Tim7Irq.html" title="struct stm32f100xx::interrupt::Tim7Irq">Tim7Irq</a>)</code>
+                           </span></span><div class='docblock'><p>55 - TIM7 global interrupt</p>
+</div><span id='structfield.Dma2Channel1Irq' class="structfield">
+                           <span id='Dma2Channel1Irq.v' class='invisible'>
+                           <code>Dma2Channel1Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma2Channel1Irq.html" title="struct stm32f100xx::interrupt::Dma2Channel1Irq">Dma2Channel1Irq</a>)</code>
+                           </span></span><div class='docblock'><p>56 - DMA2 Channel1 global interrupt</p>
+</div><span id='structfield.Dma2Channel2Irq' class="structfield">
+                           <span id='Dma2Channel2Irq.v' class='invisible'>
+                           <code>Dma2Channel2Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma2Channel2Irq.html" title="struct stm32f100xx::interrupt::Dma2Channel2Irq">Dma2Channel2Irq</a>)</code>
+                           </span></span><div class='docblock'><p>57 - DMA2 Channel2 global interrupt</p>
+</div><span id='structfield.Dma2Channel3Irq' class="structfield">
+                           <span id='Dma2Channel3Irq.v' class='invisible'>
+                           <code>Dma2Channel3Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma2Channel3Irq.html" title="struct stm32f100xx::interrupt::Dma2Channel3Irq">Dma2Channel3Irq</a>)</code>
+                           </span></span><div class='docblock'><p>58 - DMA2 Channel3 global interrupt</p>
+</div><span id='structfield.Dma2Channel45Irq' class="structfield">
+                           <span id='Dma2Channel45Irq.v' class='invisible'>
+                           <code>Dma2Channel45Irq: extern &quot;C&quot; fn(_: <a class="struct" href="../../stm32f100xx/interrupt/struct.Dma2Channel45Irq.html" title="struct stm32f100xx::interrupt::Dma2Channel45Irq">Dma2Channel45Irq</a>)</code>
+                           </span></span><div class='docblock'><p>59 - DMA2 Channel4 and DMA2 Channel5 global interrupt</p>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "stm32f100xx";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

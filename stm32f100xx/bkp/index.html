@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `bkp` mod in crate `stm32f100xx`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, bkp">
+
+    <title>stm32f100xx::bkp - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Module bkp</p><div class="block items"><ul><li><a href="#modules">Modules</a></li><li><a href="#structs">Structs</a></li></ul></div><p class='location'><a href='../index.html'>stm32f100xx</a></p><script>window.sidebarCurrent = {name: 'bkp', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>stm32f100xx</a>::<wbr><a class="mod" href=''>bkp</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/stm32f100xx/lib.rs.html#32403-37471' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Backup registers</p>
+</div><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="cr/index.html"
+                                  title='mod stm32f100xx::bkp::cr'>cr</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup control register (BKP_CR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="csr/index.html"
+                                  title='mod stm32f100xx::bkp::csr'>csr</a></td>
+                           <td class='docblock-short'>
+                                <p>BKP_CSR control/status register (BKP_CSR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr1/index.html"
+                                  title='mod stm32f100xx::bkp::dr1'>dr1</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr2/index.html"
+                                  title='mod stm32f100xx::bkp::dr2'>dr2</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr3/index.html"
+                                  title='mod stm32f100xx::bkp::dr3'>dr3</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr4/index.html"
+                                  title='mod stm32f100xx::bkp::dr4'>dr4</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr5/index.html"
+                                  title='mod stm32f100xx::bkp::dr5'>dr5</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr6/index.html"
+                                  title='mod stm32f100xx::bkp::dr6'>dr6</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr7/index.html"
+                                  title='mod stm32f100xx::bkp::dr7'>dr7</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr8/index.html"
+                                  title='mod stm32f100xx::bkp::dr8'>dr8</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr9/index.html"
+                                  title='mod stm32f100xx::bkp::dr9'>dr9</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr10/index.html"
+                                  title='mod stm32f100xx::bkp::dr10'>dr10</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr11/index.html"
+                                  title='mod stm32f100xx::bkp::dr11'>dr11</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr12/index.html"
+                                  title='mod stm32f100xx::bkp::dr12'>dr12</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr13/index.html"
+                                  title='mod stm32f100xx::bkp::dr13'>dr13</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr14/index.html"
+                                  title='mod stm32f100xx::bkp::dr14'>dr14</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr15/index.html"
+                                  title='mod stm32f100xx::bkp::dr15'>dr15</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr16/index.html"
+                                  title='mod stm32f100xx::bkp::dr16'>dr16</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr17/index.html"
+                                  title='mod stm32f100xx::bkp::dr17'>dr17</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr18/index.html"
+                                  title='mod stm32f100xx::bkp::dr18'>dr18</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr19/index.html"
+                                  title='mod stm32f100xx::bkp::dr19'>dr19</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr20/index.html"
+                                  title='mod stm32f100xx::bkp::dr20'>dr20</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr21/index.html"
+                                  title='mod stm32f100xx::bkp::dr21'>dr21</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr22/index.html"
+                                  title='mod stm32f100xx::bkp::dr22'>dr22</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr23/index.html"
+                                  title='mod stm32f100xx::bkp::dr23'>dr23</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr24/index.html"
+                                  title='mod stm32f100xx::bkp::dr24'>dr24</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr25/index.html"
+                                  title='mod stm32f100xx::bkp::dr25'>dr25</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr26/index.html"
+                                  title='mod stm32f100xx::bkp::dr26'>dr26</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr27/index.html"
+                                  title='mod stm32f100xx::bkp::dr27'>dr27</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr28/index.html"
+                                  title='mod stm32f100xx::bkp::dr28'>dr28</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr29/index.html"
+                                  title='mod stm32f100xx::bkp::dr29'>dr29</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr30/index.html"
+                                  title='mod stm32f100xx::bkp::dr30'>dr30</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr31/index.html"
+                                  title='mod stm32f100xx::bkp::dr31'>dr31</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr32/index.html"
+                                  title='mod stm32f100xx::bkp::dr32'>dr32</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr33/index.html"
+                                  title='mod stm32f100xx::bkp::dr33'>dr33</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr34/index.html"
+                                  title='mod stm32f100xx::bkp::dr34'>dr34</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr35/index.html"
+                                  title='mod stm32f100xx::bkp::dr35'>dr35</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr36/index.html"
+                                  title='mod stm32f100xx::bkp::dr36'>dr36</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr37/index.html"
+                                  title='mod stm32f100xx::bkp::dr37'>dr37</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr38/index.html"
+                                  title='mod stm32f100xx::bkp::dr38'>dr38</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr39/index.html"
+                                  title='mod stm32f100xx::bkp::dr39'>dr39</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr40/index.html"
+                                  title='mod stm32f100xx::bkp::dr40'>dr40</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr41/index.html"
+                                  title='mod stm32f100xx::bkp::dr41'>dr41</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dr42/index.html"
+                                  title='mod stm32f100xx::bkp::dr42'>dr42</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="rtccr/index.html"
+                                  title='mod stm32f100xx::bkp::rtccr'>rtccr</a></td>
+                           <td class='docblock-short'>
+                                <p>RTC clock calibration register (BKP_RTCCR)</p>
+                           </td>
+                       </tr></table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Cr.html"
+                                  title='struct stm32f100xx::bkp::Cr'>Cr</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup control register (BKP_CR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Csr.html"
+                                  title='struct stm32f100xx::bkp::Csr'>Csr</a></td>
+                           <td class='docblock-short'>
+                                <p>BKP_CSR control/status register (BKP_CSR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr1.html"
+                                  title='struct stm32f100xx::bkp::Dr1'>Dr1</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr2.html"
+                                  title='struct stm32f100xx::bkp::Dr2'>Dr2</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr3.html"
+                                  title='struct stm32f100xx::bkp::Dr3'>Dr3</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr4.html"
+                                  title='struct stm32f100xx::bkp::Dr4'>Dr4</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr5.html"
+                                  title='struct stm32f100xx::bkp::Dr5'>Dr5</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr6.html"
+                                  title='struct stm32f100xx::bkp::Dr6'>Dr6</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr7.html"
+                                  title='struct stm32f100xx::bkp::Dr7'>Dr7</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr8.html"
+                                  title='struct stm32f100xx::bkp::Dr8'>Dr8</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr9.html"
+                                  title='struct stm32f100xx::bkp::Dr9'>Dr9</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr10.html"
+                                  title='struct stm32f100xx::bkp::Dr10'>Dr10</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr11.html"
+                                  title='struct stm32f100xx::bkp::Dr11'>Dr11</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr12.html"
+                                  title='struct stm32f100xx::bkp::Dr12'>Dr12</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr13.html"
+                                  title='struct stm32f100xx::bkp::Dr13'>Dr13</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr14.html"
+                                  title='struct stm32f100xx::bkp::Dr14'>Dr14</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr15.html"
+                                  title='struct stm32f100xx::bkp::Dr15'>Dr15</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr16.html"
+                                  title='struct stm32f100xx::bkp::Dr16'>Dr16</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr17.html"
+                                  title='struct stm32f100xx::bkp::Dr17'>Dr17</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr18.html"
+                                  title='struct stm32f100xx::bkp::Dr18'>Dr18</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr19.html"
+                                  title='struct stm32f100xx::bkp::Dr19'>Dr19</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr20.html"
+                                  title='struct stm32f100xx::bkp::Dr20'>Dr20</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr21.html"
+                                  title='struct stm32f100xx::bkp::Dr21'>Dr21</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr22.html"
+                                  title='struct stm32f100xx::bkp::Dr22'>Dr22</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr23.html"
+                                  title='struct stm32f100xx::bkp::Dr23'>Dr23</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr24.html"
+                                  title='struct stm32f100xx::bkp::Dr24'>Dr24</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr25.html"
+                                  title='struct stm32f100xx::bkp::Dr25'>Dr25</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr26.html"
+                                  title='struct stm32f100xx::bkp::Dr26'>Dr26</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr27.html"
+                                  title='struct stm32f100xx::bkp::Dr27'>Dr27</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr28.html"
+                                  title='struct stm32f100xx::bkp::Dr28'>Dr28</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr29.html"
+                                  title='struct stm32f100xx::bkp::Dr29'>Dr29</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr30.html"
+                                  title='struct stm32f100xx::bkp::Dr30'>Dr30</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr31.html"
+                                  title='struct stm32f100xx::bkp::Dr31'>Dr31</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr32.html"
+                                  title='struct stm32f100xx::bkp::Dr32'>Dr32</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr33.html"
+                                  title='struct stm32f100xx::bkp::Dr33'>Dr33</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr34.html"
+                                  title='struct stm32f100xx::bkp::Dr34'>Dr34</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr35.html"
+                                  title='struct stm32f100xx::bkp::Dr35'>Dr35</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr36.html"
+                                  title='struct stm32f100xx::bkp::Dr36'>Dr36</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr37.html"
+                                  title='struct stm32f100xx::bkp::Dr37'>Dr37</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr38.html"
+                                  title='struct stm32f100xx::bkp::Dr38'>Dr38</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr39.html"
+                                  title='struct stm32f100xx::bkp::Dr39'>Dr39</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr40.html"
+                                  title='struct stm32f100xx::bkp::Dr40'>Dr40</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr41.html"
+                                  title='struct stm32f100xx::bkp::Dr41'>Dr41</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dr42.html"
+                                  title='struct stm32f100xx::bkp::Dr42'>Dr42</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup data register (BKP_DR)</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RegisterBlock.html"
+                                  title='struct stm32f100xx::bkp::RegisterBlock'>RegisterBlock</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Rtccr.html"
+                                  title='struct stm32f100xx::bkp::Rtccr'>Rtccr</a></td>
+                           <td class='docblock-short'>
+                                <p>RTC clock calibration register (BKP_RTCCR)</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "stm32f100xx";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

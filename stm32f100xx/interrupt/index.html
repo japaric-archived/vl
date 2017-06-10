@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `interrupt` mod in crate `stm32f100xx`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, interrupt">
+
+    <title>stm32f100xx::interrupt - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Module interrupt</p><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#constants">Constants</a></li></ul></div><p class='location'><a href='../index.html'>stm32f100xx</a></p><script>window.sidebarCurrent = {name: 'interrupt', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>stm32f100xx</a>::<wbr><a class="mod" href=''>interrupt</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/stm32f100xx/lib.rs.html#6-922' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Interrupts</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.AdcIrq.html"
+                                  title='struct stm32f100xx::interrupt::AdcIrq'>AdcIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>18 - ADC1 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.CecIrq.html"
+                                  title='struct stm32f100xx::interrupt::CecIrq'>CecIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>42 - CEC global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dma1Channel1Irq.html"
+                                  title='struct stm32f100xx::interrupt::Dma1Channel1Irq'>Dma1Channel1Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>11 - DMA1 Channel1 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dma1Channel2Irq.html"
+                                  title='struct stm32f100xx::interrupt::Dma1Channel2Irq'>Dma1Channel2Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>12 - DMA1 Channel2 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dma1Channel3Irq.html"
+                                  title='struct stm32f100xx::interrupt::Dma1Channel3Irq'>Dma1Channel3Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>13 - DMA1 Channel3 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dma1Channel4Irq.html"
+                                  title='struct stm32f100xx::interrupt::Dma1Channel4Irq'>Dma1Channel4Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>14 - DMA1 Channel4 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dma1Channel5Irq.html"
+                                  title='struct stm32f100xx::interrupt::Dma1Channel5Irq'>Dma1Channel5Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>15 - DMA1 Channel5 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dma1Channel6Irq.html"
+                                  title='struct stm32f100xx::interrupt::Dma1Channel6Irq'>Dma1Channel6Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>16 - DMA1 Channel6 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dma1Channel7Irq.html"
+                                  title='struct stm32f100xx::interrupt::Dma1Channel7Irq'>Dma1Channel7Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>17 - DMA1 Channel7 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dma2Channel1Irq.html"
+                                  title='struct stm32f100xx::interrupt::Dma2Channel1Irq'>Dma2Channel1Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>56 - DMA2 Channel1 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dma2Channel2Irq.html"
+                                  title='struct stm32f100xx::interrupt::Dma2Channel2Irq'>Dma2Channel2Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>57 - DMA2 Channel2 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dma2Channel3Irq.html"
+                                  title='struct stm32f100xx::interrupt::Dma2Channel3Irq'>Dma2Channel3Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>58 - DMA2 Channel3 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dma2Channel45Irq.html"
+                                  title='struct stm32f100xx::interrupt::Dma2Channel45Irq'>Dma2Channel45Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>59 - DMA2 Channel4 and DMA2 Channel5 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Exti0Irq.html"
+                                  title='struct stm32f100xx::interrupt::Exti0Irq'>Exti0Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>6 - EXTI Line0 interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Exti1510Irq.html"
+                                  title='struct stm32f100xx::interrupt::Exti1510Irq'>Exti1510Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>40 - EXTI Line[15:10] interrupts</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Exti1Irq.html"
+                                  title='struct stm32f100xx::interrupt::Exti1Irq'>Exti1Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>7 - EXTI Line1 interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Exti2Irq.html"
+                                  title='struct stm32f100xx::interrupt::Exti2Irq'>Exti2Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>8 - EXTI Line2 interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Exti3Irq.html"
+                                  title='struct stm32f100xx::interrupt::Exti3Irq'>Exti3Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>9 - EXTI Line3 interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Exti4Irq.html"
+                                  title='struct stm32f100xx::interrupt::Exti4Irq'>Exti4Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>10 - EXTI Line4 interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Exti95Irq.html"
+                                  title='struct stm32f100xx::interrupt::Exti95Irq'>Exti95Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>23 - EXTI Line[9:5] interrupts</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.FlashIrq.html"
+                                  title='struct stm32f100xx::interrupt::FlashIrq'>FlashIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>4 - Flash global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.FsmcIrq.html"
+                                  title='struct stm32f100xx::interrupt::FsmcIrq'>FsmcIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>48 - FSMC global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Handlers.html"
+                                  title='struct stm32f100xx::interrupt::Handlers'>Handlers</a></td>
+                           <td class='docblock-short'>
+                                <p>Interrupt handlers</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.I2c1ErIrq.html"
+                                  title='struct stm32f100xx::interrupt::I2c1ErIrq'>I2c1ErIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>32 - I2C1 error interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.I2c1EvIrq.html"
+                                  title='struct stm32f100xx::interrupt::I2c1EvIrq'>I2c1EvIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>31 - I2C1 event interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.I2c2ErIrq.html"
+                                  title='struct stm32f100xx::interrupt::I2c2ErIrq'>I2c2ErIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>34 - I2C2 error interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.I2c2EvIrq.html"
+                                  title='struct stm32f100xx::interrupt::I2c2EvIrq'>I2c2EvIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>33 - I2C2 event interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.PvdIrq.html"
+                                  title='struct stm32f100xx::interrupt::PvdIrq'>PvdIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>1 - PVD through EXTI line detection interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RccIrq.html"
+                                  title='struct stm32f100xx::interrupt::RccIrq'>RccIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>5 - RCC global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RtcWkupIrq.html"
+                                  title='struct stm32f100xx::interrupt::RtcWkupIrq'>RtcWkupIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>3 - RTC Wakeup through EXTI line interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RtcalarmIrq.html"
+                                  title='struct stm32f100xx::interrupt::RtcalarmIrq'>RtcalarmIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>41 - RTC Alarms through EXTI line interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Spi1Irq.html"
+                                  title='struct stm32f100xx::interrupt::Spi1Irq'>Spi1Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>35 - SPI1 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Spi2Irq.html"
+                                  title='struct stm32f100xx::interrupt::Spi2Irq'>Spi2Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>36 - SPI2 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Spi3Irq.html"
+                                  title='struct stm32f100xx::interrupt::Spi3Irq'>Spi3Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>51 - SPI3 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.TamperStampIrq.html"
+                                  title='struct stm32f100xx::interrupt::TamperStampIrq'>TamperStampIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>2 - Tamper and TimeStamp through EXTI line interrupts</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim12Irq.html"
+                                  title='struct stm32f100xx::interrupt::Tim12Irq'>Tim12Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>43 - TIM12 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim13Irq.html"
+                                  title='struct stm32f100xx::interrupt::Tim13Irq'>Tim13Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>44 - TIM13 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim1BrkTim15Irq.html"
+                                  title='struct stm32f100xx::interrupt::Tim1BrkTim15Irq'>Tim1BrkTim15Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>24 - TIM1 Break interrupt and TIM15 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim1CcIrq.html"
+                                  title='struct stm32f100xx::interrupt::Tim1CcIrq'>Tim1CcIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>27 - TIM1 Capture Compare interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim1TrgComTim17Irq.html"
+                                  title='struct stm32f100xx::interrupt::Tim1TrgComTim17Irq'>Tim1TrgComTim17Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>26 - TIM1 Trigger and Commutation interrupts and TIM17 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim1UpTim16Irq.html"
+                                  title='struct stm32f100xx::interrupt::Tim1UpTim16Irq'>Tim1UpTim16Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>25 - TIM1 Update interrupt and TIM16 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim2Irq.html"
+                                  title='struct stm32f100xx::interrupt::Tim2Irq'>Tim2Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>28 - TIM2 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim3Irq.html"
+                                  title='struct stm32f100xx::interrupt::Tim3Irq'>Tim3Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>29 - TIM3 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim4Irq.html"
+                                  title='struct stm32f100xx::interrupt::Tim4Irq'>Tim4Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>30 - TIM4 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim5Irq.html"
+                                  title='struct stm32f100xx::interrupt::Tim5Irq'>Tim5Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>50 - TIM5 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim6DacIrq.html"
+                                  title='struct stm32f100xx::interrupt::Tim6DacIrq'>Tim6DacIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>54 - TIM6 global and DAC underrun interrupts</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim7Irq.html"
+                                  title='struct stm32f100xx::interrupt::Tim7Irq'>Tim7Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>55 - TIM7 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Uart4Irq.html"
+                                  title='struct stm32f100xx::interrupt::Uart4Irq'>Uart4Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>52 - UART4 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Uart5Irq.html"
+                                  title='struct stm32f100xx::interrupt::Uart5Irq'>Uart5Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>53 - UART5 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Usart1Irq.html"
+                                  title='struct stm32f100xx::interrupt::Usart1Irq'>Usart1Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>37 - USART1 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Usart2Irq.html"
+                                  title='struct stm32f100xx::interrupt::Usart2Irq'>Usart2Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>38 - USART2 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Usart3Irq.html"
+                                  title='struct stm32f100xx::interrupt::Usart3Irq'>Usart3Irq</a></td>
+                           <td class='docblock-short'>
+                                <p>39 - USART3 global interrupt</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.WwdgIrq.html"
+                                  title='struct stm32f100xx::interrupt::WwdgIrq'>WwdgIrq</a></td>
+                           <td class='docblock-short'>
+                                <p>0 - Window Watchdog interrupt</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="enum" href="enum.Interrupt.html"
+                                  title='enum stm32f100xx::interrupt::Interrupt'>Interrupt</a></td>
+                           <td class='docblock-short'>
+                                <p>Enumeration of all the interrupts</p>
+                           </td>
+                       </tr></table><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.DEFAULT_HANDLERS.html"
+                                  title='constant stm32f100xx::interrupt::DEFAULT_HANDLERS'>DEFAULT_HANDLERS</a></td>
+                           <td class='docblock-short'>
+                                <p>Default interrupt handlers</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "stm32f100xx";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

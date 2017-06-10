@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["cr","Control register"],["dr","Data register"],["idr","Independent Data register"]],"struct":[["Cr","Control register"],["Dr","Data register"],["Idr","Independent Data register"],["RegisterBlock","Register block"]]});

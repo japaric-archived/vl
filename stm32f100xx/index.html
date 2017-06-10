@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `stm32f100xx` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, stm32f100xx">
+
+    <title>stm32f100xx - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc mod">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Crate stm32f100xx</p><div class="block items"><ul><li><a href="#modules">Modules</a></li><li><a href="#structs">Structs</a></li><li><a href="#constants">Constants</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'stm32f100xx', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Crate <a class="mod" href=''>stm32f100xx</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../src/stm32f100xx/lib.rs.html#1-83389' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Peripheral access API for STM32F100XX microcontrollers (generated using svd2rust v0.7.0)</p>
+</div><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="adc1/index.html"
+                                  title='mod stm32f100xx::adc1'>adc1</a></td>
+                           <td class='docblock-short'>
+                                <p>Analog to digital converter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="afio/index.html"
+                                  title='mod stm32f100xx::afio'>afio</a></td>
+                           <td class='docblock-short'>
+                                <p>Alternate function I/O</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="bkp/index.html"
+                                  title='mod stm32f100xx::bkp'>bkp</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup registers</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="cec/index.html"
+                                  title='mod stm32f100xx::cec'>cec</a></td>
+                           <td class='docblock-short'>
+                                <p>HDMI-CEC controller</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="crc/index.html"
+                                  title='mod stm32f100xx::crc'>crc</a></td>
+                           <td class='docblock-short'>
+                                <p>CRC calculation unit</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dac/index.html"
+                                  title='mod stm32f100xx::dac'>dac</a></td>
+                           <td class='docblock-short'>
+                                <p>Digital to analog converter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dbg/index.html"
+                                  title='mod stm32f100xx::dbg'>dbg</a></td>
+                           <td class='docblock-short'>
+                                <p>Debug support</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="dma1/index.html"
+                                  title='mod stm32f100xx::dma1'>dma1</a></td>
+                           <td class='docblock-short'>
+                                <p>DMA controller</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="exti/index.html"
+                                  title='mod stm32f100xx::exti'>exti</a></td>
+                           <td class='docblock-short'>
+                                <p>EXTI</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="flash/index.html"
+                                  title='mod stm32f100xx::flash'>flash</a></td>
+                           <td class='docblock-short'>
+                                <p>FLASH</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="fsmc/index.html"
+                                  title='mod stm32f100xx::fsmc'>fsmc</a></td>
+                           <td class='docblock-short'>
+                                <p>Flexible static memory controller</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="gpioa/index.html"
+                                  title='mod stm32f100xx::gpioa'>gpioa</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose I/O</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="i2c1/index.html"
+                                  title='mod stm32f100xx::i2c1'>i2c1</a></td>
+                           <td class='docblock-short'>
+                                <p>Inter integrated circuit</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="interrupt/index.html"
+                                  title='mod stm32f100xx::interrupt'>interrupt</a></td>
+                           <td class='docblock-short'>
+                                <p>Interrupts</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="iwdg/index.html"
+                                  title='mod stm32f100xx::iwdg'>iwdg</a></td>
+                           <td class='docblock-short'>
+                                <p>Independent watchdog</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="pwr/index.html"
+                                  title='mod stm32f100xx::pwr'>pwr</a></td>
+                           <td class='docblock-short'>
+                                <p>Power control</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="rcc/index.html"
+                                  title='mod stm32f100xx::rcc'>rcc</a></td>
+                           <td class='docblock-short'>
+                                <p>Reset and clock control</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="rtc/index.html"
+                                  title='mod stm32f100xx::rtc'>rtc</a></td>
+                           <td class='docblock-short'>
+                                <p>Real time clock</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="spi1/index.html"
+                                  title='mod stm32f100xx::spi1'>spi1</a></td>
+                           <td class='docblock-short'>
+                                <p>Serial peripheral interface</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="tim1/index.html"
+                                  title='mod stm32f100xx::tim1'>tim1</a></td>
+                           <td class='docblock-short'>
+                                <p>Advanced timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="tim2/index.html"
+                                  title='mod stm32f100xx::tim2'>tim2</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="tim6/index.html"
+                                  title='mod stm32f100xx::tim6'>tim6</a></td>
+                           <td class='docblock-short'>
+                                <p>Basic timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="tim12/index.html"
+                                  title='mod stm32f100xx::tim12'>tim12</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="tim13/index.html"
+                                  title='mod stm32f100xx::tim13'>tim13</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="tim15/index.html"
+                                  title='mod stm32f100xx::tim15'>tim15</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose timers</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="tim16/index.html"
+                                  title='mod stm32f100xx::tim16'>tim16</a></td>
+                           <td class='docblock-short'>
+                                <p>General-purpose-timers</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="uart4/index.html"
+                                  title='mod stm32f100xx::uart4'>uart4</a></td>
+                           <td class='docblock-short'>
+                                <p>Universal asynchronous receiver transmitter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="uart5/index.html"
+                                  title='mod stm32f100xx::uart5'>uart5</a></td>
+                           <td class='docblock-short'>
+                                <p>Universal asynchronous receiver transmitter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="usart1/index.html"
+                                  title='mod stm32f100xx::usart1'>usart1</a></td>
+                           <td class='docblock-short'>
+                                <p>Universal synchronous asynchronous receiver transmitter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="wwdg/index.html"
+                                  title='mod stm32f100xx::wwdg'>wwdg</a></td>
+                           <td class='docblock-short'>
+                                <p>Window watchdog</p>
+                           </td>
+                       </tr></table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Adc1.html"
+                                  title='struct stm32f100xx::Adc1'>Adc1</a></td>
+                           <td class='docblock-short'>
+                                <p>Analog to digital converter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Afio.html"
+                                  title='struct stm32f100xx::Afio'>Afio</a></td>
+                           <td class='docblock-short'>
+                                <p>Alternate function I/O</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Bkp.html"
+                                  title='struct stm32f100xx::Bkp'>Bkp</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup registers</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Cec.html"
+                                  title='struct stm32f100xx::Cec'>Cec</a></td>
+                           <td class='docblock-short'>
+                                <p>HDMI-CEC controller</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Cpuid.html"
+                                  title='struct stm32f100xx::Cpuid'>Cpuid</a></td>
+                           <td class='docblock-short'>
+                                <p>CPUID register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Crc.html"
+                                  title='struct stm32f100xx::Crc'>Crc</a></td>
+                           <td class='docblock-short'>
+                                <p>CRC calculation unit</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dac.html"
+                                  title='struct stm32f100xx::Dac'>Dac</a></td>
+                           <td class='docblock-short'>
+                                <p>Digital to analog converter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dbg.html"
+                                  title='struct stm32f100xx::Dbg'>Dbg</a></td>
+                           <td class='docblock-short'>
+                                <p>Debug support</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dcb.html"
+                                  title='struct stm32f100xx::Dcb'>Dcb</a></td>
+                           <td class='docblock-short'>
+                                <p>DCB register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dma1.html"
+                                  title='struct stm32f100xx::Dma1'>Dma1</a></td>
+                           <td class='docblock-short'>
+                                <p>DMA controller</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dma2.html"
+                                  title='struct stm32f100xx::Dma2'>Dma2</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Dwt.html"
+                                  title='struct stm32f100xx::Dwt'>Dwt</a></td>
+                           <td class='docblock-short'>
+                                <p>DWT register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Exti.html"
+                                  title='struct stm32f100xx::Exti'>Exti</a></td>
+                           <td class='docblock-short'>
+                                <p>EXTI</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Flash.html"
+                                  title='struct stm32f100xx::Flash'>Flash</a></td>
+                           <td class='docblock-short'>
+                                <p>FLASH</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Fpb.html"
+                                  title='struct stm32f100xx::Fpb'>Fpb</a></td>
+                           <td class='docblock-short'>
+                                <p>FPB register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Fpu.html"
+                                  title='struct stm32f100xx::Fpu'>Fpu</a></td>
+                           <td class='docblock-short'>
+                                <p>FPU register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Fsmc.html"
+                                  title='struct stm32f100xx::Fsmc'>Fsmc</a></td>
+                           <td class='docblock-short'>
+                                <p>Flexible static memory controller</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Gpioa.html"
+                                  title='struct stm32f100xx::Gpioa'>Gpioa</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose I/O</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Gpiob.html"
+                                  title='struct stm32f100xx::Gpiob'>Gpiob</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Gpioc.html"
+                                  title='struct stm32f100xx::Gpioc'>Gpioc</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Gpiod.html"
+                                  title='struct stm32f100xx::Gpiod'>Gpiod</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Gpioe.html"
+                                  title='struct stm32f100xx::Gpioe'>Gpioe</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Gpiof.html"
+                                  title='struct stm32f100xx::Gpiof'>Gpiof</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Gpiog.html"
+                                  title='struct stm32f100xx::Gpiog'>Gpiog</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.I2c1.html"
+                                  title='struct stm32f100xx::I2c1'>I2c1</a></td>
+                           <td class='docblock-short'>
+                                <p>Inter integrated circuit</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.I2c2.html"
+                                  title='struct stm32f100xx::I2c2'>I2c2</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Itm.html"
+                                  title='struct stm32f100xx::Itm'>Itm</a></td>
+                           <td class='docblock-short'>
+                                <p>ITM register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Iwdg.html"
+                                  title='struct stm32f100xx::Iwdg'>Iwdg</a></td>
+                           <td class='docblock-short'>
+                                <p>Independent watchdog</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Mpu.html"
+                                  title='struct stm32f100xx::Mpu'>Mpu</a></td>
+                           <td class='docblock-short'>
+                                <p>MPU register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Nvic.html"
+                                  title='struct stm32f100xx::Nvic'>Nvic</a></td>
+                           <td class='docblock-short'>
+                                <p>NVIC register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Pwr.html"
+                                  title='struct stm32f100xx::Pwr'>Pwr</a></td>
+                           <td class='docblock-short'>
+                                <p>Power control</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Rcc.html"
+                                  title='struct stm32f100xx::Rcc'>Rcc</a></td>
+                           <td class='docblock-short'>
+                                <p>Reset and clock control</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Rtc.html"
+                                  title='struct stm32f100xx::Rtc'>Rtc</a></td>
+                           <td class='docblock-short'>
+                                <p>Real time clock</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Scb.html"
+                                  title='struct stm32f100xx::Scb'>Scb</a></td>
+                           <td class='docblock-short'>
+                                <p>SCB register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Spi1.html"
+                                  title='struct stm32f100xx::Spi1'>Spi1</a></td>
+                           <td class='docblock-short'>
+                                <p>Serial peripheral interface</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Spi2.html"
+                                  title='struct stm32f100xx::Spi2'>Spi2</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Spi3.html"
+                                  title='struct stm32f100xx::Spi3'>Spi3</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Syst.html"
+                                  title='struct stm32f100xx::Syst'>Syst</a></td>
+                           <td class='docblock-short'>
+                                <p>SysTick register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim1.html"
+                                  title='struct stm32f100xx::Tim1'>Tim1</a></td>
+                           <td class='docblock-short'>
+                                <p>Advanced timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim2.html"
+                                  title='struct stm32f100xx::Tim2'>Tim2</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim3.html"
+                                  title='struct stm32f100xx::Tim3'>Tim3</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim4.html"
+                                  title='struct stm32f100xx::Tim4'>Tim4</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim5.html"
+                                  title='struct stm32f100xx::Tim5'>Tim5</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim6.html"
+                                  title='struct stm32f100xx::Tim6'>Tim6</a></td>
+                           <td class='docblock-short'>
+                                <p>Basic timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim7.html"
+                                  title='struct stm32f100xx::Tim7'>Tim7</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim12.html"
+                                  title='struct stm32f100xx::Tim12'>Tim12</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim13.html"
+                                  title='struct stm32f100xx::Tim13'>Tim13</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim14.html"
+                                  title='struct stm32f100xx::Tim14'>Tim14</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim15.html"
+                                  title='struct stm32f100xx::Tim15'>Tim15</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose timers</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim16.html"
+                                  title='struct stm32f100xx::Tim16'>Tim16</a></td>
+                           <td class='docblock-short'>
+                                <p>General-purpose-timers</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tim17.html"
+                                  title='struct stm32f100xx::Tim17'>Tim17</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Tpiu.html"
+                                  title='struct stm32f100xx::Tpiu'>Tpiu</a></td>
+                           <td class='docblock-short'>
+                                <p>TPIU register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Uart4.html"
+                                  title='struct stm32f100xx::Uart4'>Uart4</a></td>
+                           <td class='docblock-short'>
+                                <p>Universal asynchronous receiver transmitter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Uart5.html"
+                                  title='struct stm32f100xx::Uart5'>Uart5</a></td>
+                           <td class='docblock-short'>
+                                <p>Universal asynchronous receiver transmitter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Usart1.html"
+                                  title='struct stm32f100xx::Usart1'>Usart1</a></td>
+                           <td class='docblock-short'>
+                                <p>Universal synchronous asynchronous receiver transmitter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Usart2.html"
+                                  title='struct stm32f100xx::Usart2'>Usart2</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Usart3.html"
+                                  title='struct stm32f100xx::Usart3'>Usart3</a></td>
+                           <td class='docblock-short'>
+                                <p>Register block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Wwdg.html"
+                                  title='struct stm32f100xx::Wwdg'>Wwdg</a></td>
+                           <td class='docblock-short'>
+                                <p>Window watchdog</p>
+                           </td>
+                       </tr></table><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.ADC1.html"
+                                  title='constant stm32f100xx::ADC1'>ADC1</a></td>
+                           <td class='docblock-short'>
+                                <p>Analog to digital converter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.AFIO.html"
+                                  title='constant stm32f100xx::AFIO'>AFIO</a></td>
+                           <td class='docblock-short'>
+                                <p>Alternate function I/O</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BKP.html"
+                                  title='constant stm32f100xx::BKP'>BKP</a></td>
+                           <td class='docblock-short'>
+                                <p>Backup registers</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CEC.html"
+                                  title='constant stm32f100xx::CEC'>CEC</a></td>
+                           <td class='docblock-short'>
+                                <p>HDMI-CEC controller</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CPUID.html"
+                                  title='constant stm32f100xx::CPUID'>CPUID</a></td>
+                           <td class='docblock-short'>
+                                <p>CPUID</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CRC.html"
+                                  title='constant stm32f100xx::CRC'>CRC</a></td>
+                           <td class='docblock-short'>
+                                <p>CRC calculation unit</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.DAC.html"
+                                  title='constant stm32f100xx::DAC'>DAC</a></td>
+                           <td class='docblock-short'>
+                                <p>Digital to analog converter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.DBG.html"
+                                  title='constant stm32f100xx::DBG'>DBG</a></td>
+                           <td class='docblock-short'>
+                                <p>Debug support</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.DCB.html"
+                                  title='constant stm32f100xx::DCB'>DCB</a></td>
+                           <td class='docblock-short'>
+                                <p>Debug Control Block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.DMA1.html"
+                                  title='constant stm32f100xx::DMA1'>DMA1</a></td>
+                           <td class='docblock-short'>
+                                <p>DMA controller</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.DMA2.html"
+                                  title='constant stm32f100xx::DMA2'>DMA2</a></td>
+                           <td class='docblock-short'>
+                                <p>DMA2</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.DWT.html"
+                                  title='constant stm32f100xx::DWT'>DWT</a></td>
+                           <td class='docblock-short'>
+                                <p>Data Watchpoint and Trace unit</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.EXTI.html"
+                                  title='constant stm32f100xx::EXTI'>EXTI</a></td>
+                           <td class='docblock-short'>
+                                <p>EXTI</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.FLASH.html"
+                                  title='constant stm32f100xx::FLASH'>FLASH</a></td>
+                           <td class='docblock-short'>
+                                <p>FLASH</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.FPB.html"
+                                  title='constant stm32f100xx::FPB'>FPB</a></td>
+                           <td class='docblock-short'>
+                                <p>Flash Patch and Breakpoint unit</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.FPU.html"
+                                  title='constant stm32f100xx::FPU'>FPU</a></td>
+                           <td class='docblock-short'>
+                                <p>Floating Point Unit</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.FSMC.html"
+                                  title='constant stm32f100xx::FSMC'>FSMC</a></td>
+                           <td class='docblock-short'>
+                                <p>Flexible static memory controller</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GPIOA.html"
+                                  title='constant stm32f100xx::GPIOA'>GPIOA</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose I/O</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GPIOB.html"
+                                  title='constant stm32f100xx::GPIOB'>GPIOB</a></td>
+                           <td class='docblock-short'>
+                                <p>GPIOB</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GPIOC.html"
+                                  title='constant stm32f100xx::GPIOC'>GPIOC</a></td>
+                           <td class='docblock-short'>
+                                <p>GPIOC</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GPIOD.html"
+                                  title='constant stm32f100xx::GPIOD'>GPIOD</a></td>
+                           <td class='docblock-short'>
+                                <p>GPIOD</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GPIOE.html"
+                                  title='constant stm32f100xx::GPIOE'>GPIOE</a></td>
+                           <td class='docblock-short'>
+                                <p>GPIOE</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GPIOF.html"
+                                  title='constant stm32f100xx::GPIOF'>GPIOF</a></td>
+                           <td class='docblock-short'>
+                                <p>GPIOF</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GPIOG.html"
+                                  title='constant stm32f100xx::GPIOG'>GPIOG</a></td>
+                           <td class='docblock-short'>
+                                <p>GPIOG</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.I2C1.html"
+                                  title='constant stm32f100xx::I2C1'>I2C1</a></td>
+                           <td class='docblock-short'>
+                                <p>Inter integrated circuit</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.I2C2.html"
+                                  title='constant stm32f100xx::I2C2'>I2C2</a></td>
+                           <td class='docblock-short'>
+                                <p>I2C2</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.ITM.html"
+                                  title='constant stm32f100xx::ITM'>ITM</a></td>
+                           <td class='docblock-short'>
+                                <p>Instrumentation Trace Macrocell</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.IWDG.html"
+                                  title='constant stm32f100xx::IWDG'>IWDG</a></td>
+                           <td class='docblock-short'>
+                                <p>Independent watchdog</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MPU.html"
+                                  title='constant stm32f100xx::MPU'>MPU</a></td>
+                           <td class='docblock-short'>
+                                <p>Memory Protection Unit</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NVIC.html"
+                                  title='constant stm32f100xx::NVIC'>NVIC</a></td>
+                           <td class='docblock-short'>
+                                <p>Nested Vector Interrupt Controller</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.PWR.html"
+                                  title='constant stm32f100xx::PWR'>PWR</a></td>
+                           <td class='docblock-short'>
+                                <p>Power control</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.RCC.html"
+                                  title='constant stm32f100xx::RCC'>RCC</a></td>
+                           <td class='docblock-short'>
+                                <p>Reset and clock control</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.RTC.html"
+                                  title='constant stm32f100xx::RTC'>RTC</a></td>
+                           <td class='docblock-short'>
+                                <p>Real time clock</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SCB.html"
+                                  title='constant stm32f100xx::SCB'>SCB</a></td>
+                           <td class='docblock-short'>
+                                <p>System Control Block</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SPI1.html"
+                                  title='constant stm32f100xx::SPI1'>SPI1</a></td>
+                           <td class='docblock-short'>
+                                <p>Serial peripheral interface</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SPI2.html"
+                                  title='constant stm32f100xx::SPI2'>SPI2</a></td>
+                           <td class='docblock-short'>
+                                <p>SPI2</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SPI3.html"
+                                  title='constant stm32f100xx::SPI3'>SPI3</a></td>
+                           <td class='docblock-short'>
+                                <p>SPI3</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SYST.html"
+                                  title='constant stm32f100xx::SYST'>SYST</a></td>
+                           <td class='docblock-short'>
+                                <p>SysTick: System Timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIM1.html"
+                                  title='constant stm32f100xx::TIM1'>TIM1</a></td>
+                           <td class='docblock-short'>
+                                <p>Advanced timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIM2.html"
+                                  title='constant stm32f100xx::TIM2'>TIM2</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIM3.html"
+                                  title='constant stm32f100xx::TIM3'>TIM3</a></td>
+                           <td class='docblock-short'>
+                                <p>TIM3</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIM4.html"
+                                  title='constant stm32f100xx::TIM4'>TIM4</a></td>
+                           <td class='docblock-short'>
+                                <p>TIM4</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIM5.html"
+                                  title='constant stm32f100xx::TIM5'>TIM5</a></td>
+                           <td class='docblock-short'>
+                                <p>TIM5</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIM6.html"
+                                  title='constant stm32f100xx::TIM6'>TIM6</a></td>
+                           <td class='docblock-short'>
+                                <p>Basic timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIM7.html"
+                                  title='constant stm32f100xx::TIM7'>TIM7</a></td>
+                           <td class='docblock-short'>
+                                <p>TIM7</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIM12.html"
+                                  title='constant stm32f100xx::TIM12'>TIM12</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIM13.html"
+                                  title='constant stm32f100xx::TIM13'>TIM13</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose timer</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIM14.html"
+                                  title='constant stm32f100xx::TIM14'>TIM14</a></td>
+                           <td class='docblock-short'>
+                                <p>TIM14</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIM15.html"
+                                  title='constant stm32f100xx::TIM15'>TIM15</a></td>
+                           <td class='docblock-short'>
+                                <p>General purpose timers</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIM16.html"
+                                  title='constant stm32f100xx::TIM16'>TIM16</a></td>
+                           <td class='docblock-short'>
+                                <p>General-purpose-timers</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIM17.html"
+                                  title='constant stm32f100xx::TIM17'>TIM17</a></td>
+                           <td class='docblock-short'>
+                                <p>TIM17</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TPIU.html"
+                                  title='constant stm32f100xx::TPIU'>TPIU</a></td>
+                           <td class='docblock-short'>
+                                <p>Trace Port Interface Unit;</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.UART4.html"
+                                  title='constant stm32f100xx::UART4'>UART4</a></td>
+                           <td class='docblock-short'>
+                                <p>Universal asynchronous receiver transmitter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.UART5.html"
+                                  title='constant stm32f100xx::UART5'>UART5</a></td>
+                           <td class='docblock-short'>
+                                <p>Universal asynchronous receiver transmitter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.USART1.html"
+                                  title='constant stm32f100xx::USART1'>USART1</a></td>
+                           <td class='docblock-short'>
+                                <p>Universal synchronous asynchronous receiver transmitter</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.USART2.html"
+                                  title='constant stm32f100xx::USART2'>USART2</a></td>
+                           <td class='docblock-short'>
+                                <p>USART2</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.USART3.html"
+                                  title='constant stm32f100xx::USART3'>USART3</a></td>
+                           <td class='docblock-short'>
+                                <p>USART3</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.WWDG.html"
+                                  title='constant stm32f100xx::WWDG'>WWDG</a></td>
+                           <td class='docblock-short'>
+                                <p>Window watchdog</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "stm32f100xx";
+    </script>
+    <script src="../main.js"></script>
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

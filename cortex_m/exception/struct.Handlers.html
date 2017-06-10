@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Handlers` struct in crate `cortex_m`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Handlers">
+
+    <title>cortex_m::exception::Handlers - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct Handlers</p><div class="block items"><ul><li><a href="#fields">Fields</a></li></ul></div><p class='location'><a href='../index.html'>cortex_m</a>::<wbr><a href='index.html'>exception</a></p><script>window.sidebarCurrent = {name: 'Handlers', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>cortex_m</a>::<wbr><a href='index.html'>exception</a>::<wbr><a class="struct" href=''>Handlers</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/cortex_m/exception.rs.html#55-76' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct Handlers {
+    pub nmi: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.Nmi.html" title="struct cortex_m::exception::Nmi">Nmi</a>),
+    pub hard_fault: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.HardFault.html" title="struct cortex_m::exception::HardFault">HardFault</a>),
+    pub mem_manage: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.MemManage.html" title="struct cortex_m::exception::MemManage">MemManage</a>),
+    pub bus_fault: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.BusFault.html" title="struct cortex_m::exception::BusFault">BusFault</a>),
+    pub usage_fault: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.UsageFault.html" title="struct cortex_m::exception::UsageFault">UsageFault</a>),
+    pub _reserved0: [<a class="enum" href="../../cortex_m/enum.Reserved.html" title="enum cortex_m::Reserved">Reserved</a>; 4],
+    pub svcall: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.Svcall.html" title="struct cortex_m::exception::Svcall">Svcall</a>),
+    pub _reserved1: [<a class="enum" href="../../cortex_m/enum.Reserved.html" title="enum cortex_m::Reserved">Reserved</a>; 2],
+    pub pendsv: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.Pendsv.html" title="struct cortex_m::exception::Pendsv">Pendsv</a>),
+    pub sys_tick: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.SysTick.html" title="struct cortex_m::exception::SysTick">SysTick</a>),
+}</pre><div class='docblock'><p>Exception handlers</p>
+</div><h2 id='fields' class='fields'>Fields</h2><span id='structfield.nmi' class="structfield">
+                           <span id='nmi.v' class='invisible'>
+                           <code>nmi: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.Nmi.html" title="struct cortex_m::exception::Nmi">Nmi</a>)</code>
+                           </span></span><div class='docblock'><p>Non-maskable interrupt</p>
+</div><span id='structfield.hard_fault' class="structfield">
+                           <span id='hard_fault.v' class='invisible'>
+                           <code>hard_fault: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.HardFault.html" title="struct cortex_m::exception::HardFault">HardFault</a>)</code>
+                           </span></span><div class='docblock'><p>All class of fault</p>
+</div><span id='structfield.mem_manage' class="structfield">
+                           <span id='mem_manage.v' class='invisible'>
+                           <code>mem_manage: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.MemManage.html" title="struct cortex_m::exception::MemManage">MemManage</a>)</code>
+                           </span></span><div class='docblock'><p>Memory management</p>
+</div><span id='structfield.bus_fault' class="structfield">
+                           <span id='bus_fault.v' class='invisible'>
+                           <code>bus_fault: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.BusFault.html" title="struct cortex_m::exception::BusFault">BusFault</a>)</code>
+                           </span></span><div class='docblock'><p>Pre-fetch fault, memory access fault</p>
+</div><span id='structfield.usage_fault' class="structfield">
+                           <span id='usage_fault.v' class='invisible'>
+                           <code>usage_fault: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.UsageFault.html" title="struct cortex_m::exception::UsageFault">UsageFault</a>)</code>
+                           </span></span><div class='docblock'><p>Undefined instruction or illegal state</p>
+</div><span id='structfield._reserved0' class="structfield">
+                           <span id='_reserved0.v' class='invisible'>
+                           <code>_reserved0: [<a class="enum" href="../../cortex_m/enum.Reserved.html" title="enum cortex_m::Reserved">Reserved</a>; 4]</code>
+                           </span></span><div class='docblock'><p>Reserved spots in the vector table</p>
+</div><span id='structfield.svcall' class="structfield">
+                           <span id='svcall.v' class='invisible'>
+                           <code>svcall: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.Svcall.html" title="struct cortex_m::exception::Svcall">Svcall</a>)</code>
+                           </span></span><div class='docblock'><p>System service call via SWI instruction</p>
+</div><span id='structfield._reserved1' class="structfield">
+                           <span id='_reserved1.v' class='invisible'>
+                           <code>_reserved1: [<a class="enum" href="../../cortex_m/enum.Reserved.html" title="enum cortex_m::Reserved">Reserved</a>; 2]</code>
+                           </span></span><div class='docblock'><p>Reserved spots in the vector table</p>
+</div><span id='structfield.pendsv' class="structfield">
+                           <span id='pendsv.v' class='invisible'>
+                           <code>pendsv: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.Pendsv.html" title="struct cortex_m::exception::Pendsv">Pendsv</a>)</code>
+                           </span></span><div class='docblock'><p>Pendable request for system service</p>
+</div><span id='structfield.sys_tick' class="structfield">
+                           <span id='sys_tick.v' class='invisible'>
+                           <code>sys_tick: extern &quot;C&quot; fn(_: <a class="struct" href="../../cortex_m/exception/struct.SysTick.html" title="struct cortex_m::exception::SysTick">SysTick</a>)</code>
+                           </span></span><div class='docblock'><p>System tick timer</p>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "cortex_m";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

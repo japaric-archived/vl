@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Interrupt` enum in crate `stm32f100xx`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Interrupt">
+
+    <title>stm32f100xx::interrupt::Interrupt - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc enum">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Enum Interrupt</p><div class="block items"><ul><li><a href="#variants">Variants</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>stm32f100xx</a>::<wbr><a href='index.html'>interrupt</a></p><script>window.sidebarCurrent = {name: 'Interrupt', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>stm32f100xx</a>::<wbr><a href='index.html'>interrupt</a>::<wbr><a class="enum" href=''>Interrupt</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/stm32f100xx/lib.rs.html#757-862' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum Interrupt {
+    WwdgIrq,
+    PvdIrq,
+    TamperStampIrq,
+    RtcWkupIrq,
+    FlashIrq,
+    RccIrq,
+    Exti0Irq,
+    Exti1Irq,
+    Exti2Irq,
+    Exti3Irq,
+    Exti4Irq,
+    Dma1Channel1Irq,
+    Dma1Channel2Irq,
+    Dma1Channel3Irq,
+    Dma1Channel4Irq,
+    Dma1Channel5Irq,
+    Dma1Channel6Irq,
+    Dma1Channel7Irq,
+    AdcIrq,
+    Exti95Irq,
+    Tim1BrkTim15Irq,
+    Tim1UpTim16Irq,
+    Tim1TrgComTim17Irq,
+    Tim1CcIrq,
+    Tim2Irq,
+    Tim3Irq,
+    Tim4Irq,
+    I2c1EvIrq,
+    I2c1ErIrq,
+    I2c2EvIrq,
+    I2c2ErIrq,
+    Spi1Irq,
+    Spi2Irq,
+    Usart1Irq,
+    Usart2Irq,
+    Usart3Irq,
+    Exti1510Irq,
+    RtcalarmIrq,
+    CecIrq,
+    Tim12Irq,
+    Tim13Irq,
+    FsmcIrq,
+    Tim5Irq,
+    Spi3Irq,
+    Uart4Irq,
+    Uart5Irq,
+    Tim6DacIrq,
+    Tim7Irq,
+    Dma2Channel1Irq,
+    Dma2Channel2Irq,
+    Dma2Channel3Irq,
+    Dma2Channel45Irq,
+}</pre><div class='docblock'><p>Enumeration of all the interrupts</p>
+</div><h2 id='variants' class='variants'>Variants</h2>
+<span id='variant.WwdgIrq' class='variant'><span id='WwdgIrq.v' class='invisible'><code>WwdgIrq</code></span></span><div class='docblock'><p>0 - Window Watchdog interrupt</p>
+</div><span id='variant.PvdIrq' class='variant'><span id='PvdIrq.v' class='invisible'><code>PvdIrq</code></span></span><div class='docblock'><p>1 - PVD through EXTI line detection interrupt</p>
+</div><span id='variant.TamperStampIrq' class='variant'><span id='TamperStampIrq.v' class='invisible'><code>TamperStampIrq</code></span></span><div class='docblock'><p>2 - Tamper and TimeStamp through EXTI line interrupts</p>
+</div><span id='variant.RtcWkupIrq' class='variant'><span id='RtcWkupIrq.v' class='invisible'><code>RtcWkupIrq</code></span></span><div class='docblock'><p>3 - RTC Wakeup through EXTI line interrupt</p>
+</div><span id='variant.FlashIrq' class='variant'><span id='FlashIrq.v' class='invisible'><code>FlashIrq</code></span></span><div class='docblock'><p>4 - Flash global interrupt</p>
+</div><span id='variant.RccIrq' class='variant'><span id='RccIrq.v' class='invisible'><code>RccIrq</code></span></span><div class='docblock'><p>5 - RCC global interrupt</p>
+</div><span id='variant.Exti0Irq' class='variant'><span id='Exti0Irq.v' class='invisible'><code>Exti0Irq</code></span></span><div class='docblock'><p>6 - EXTI Line0 interrupt</p>
+</div><span id='variant.Exti1Irq' class='variant'><span id='Exti1Irq.v' class='invisible'><code>Exti1Irq</code></span></span><div class='docblock'><p>7 - EXTI Line1 interrupt</p>
+</div><span id='variant.Exti2Irq' class='variant'><span id='Exti2Irq.v' class='invisible'><code>Exti2Irq</code></span></span><div class='docblock'><p>8 - EXTI Line2 interrupt</p>
+</div><span id='variant.Exti3Irq' class='variant'><span id='Exti3Irq.v' class='invisible'><code>Exti3Irq</code></span></span><div class='docblock'><p>9 - EXTI Line3 interrupt</p>
+</div><span id='variant.Exti4Irq' class='variant'><span id='Exti4Irq.v' class='invisible'><code>Exti4Irq</code></span></span><div class='docblock'><p>10 - EXTI Line4 interrupt</p>
+</div><span id='variant.Dma1Channel1Irq' class='variant'><span id='Dma1Channel1Irq.v' class='invisible'><code>Dma1Channel1Irq</code></span></span><div class='docblock'><p>11 - DMA1 Channel1 global interrupt</p>
+</div><span id='variant.Dma1Channel2Irq' class='variant'><span id='Dma1Channel2Irq.v' class='invisible'><code>Dma1Channel2Irq</code></span></span><div class='docblock'><p>12 - DMA1 Channel2 global interrupt</p>
+</div><span id='variant.Dma1Channel3Irq' class='variant'><span id='Dma1Channel3Irq.v' class='invisible'><code>Dma1Channel3Irq</code></span></span><div class='docblock'><p>13 - DMA1 Channel3 global interrupt</p>
+</div><span id='variant.Dma1Channel4Irq' class='variant'><span id='Dma1Channel4Irq.v' class='invisible'><code>Dma1Channel4Irq</code></span></span><div class='docblock'><p>14 - DMA1 Channel4 global interrupt</p>
+</div><span id='variant.Dma1Channel5Irq' class='variant'><span id='Dma1Channel5Irq.v' class='invisible'><code>Dma1Channel5Irq</code></span></span><div class='docblock'><p>15 - DMA1 Channel5 global interrupt</p>
+</div><span id='variant.Dma1Channel6Irq' class='variant'><span id='Dma1Channel6Irq.v' class='invisible'><code>Dma1Channel6Irq</code></span></span><div class='docblock'><p>16 - DMA1 Channel6 global interrupt</p>
+</div><span id='variant.Dma1Channel7Irq' class='variant'><span id='Dma1Channel7Irq.v' class='invisible'><code>Dma1Channel7Irq</code></span></span><div class='docblock'><p>17 - DMA1 Channel7 global interrupt</p>
+</div><span id='variant.AdcIrq' class='variant'><span id='AdcIrq.v' class='invisible'><code>AdcIrq</code></span></span><div class='docblock'><p>18 - ADC1 global interrupt</p>
+</div><span id='variant.Exti95Irq' class='variant'><span id='Exti95Irq.v' class='invisible'><code>Exti95Irq</code></span></span><div class='docblock'><p>23 - EXTI Line[9:5] interrupts</p>
+</div><span id='variant.Tim1BrkTim15Irq' class='variant'><span id='Tim1BrkTim15Irq.v' class='invisible'><code>Tim1BrkTim15Irq</code></span></span><div class='docblock'><p>24 - TIM1 Break interrupt and TIM15 global interrupt</p>
+</div><span id='variant.Tim1UpTim16Irq' class='variant'><span id='Tim1UpTim16Irq.v' class='invisible'><code>Tim1UpTim16Irq</code></span></span><div class='docblock'><p>25 - TIM1 Update interrupt and TIM16 global interrupt</p>
+</div><span id='variant.Tim1TrgComTim17Irq' class='variant'><span id='Tim1TrgComTim17Irq.v' class='invisible'><code>Tim1TrgComTim17Irq</code></span></span><div class='docblock'><p>26 - TIM1 Trigger and Commutation interrupts and TIM17 global interrupt</p>
+</div><span id='variant.Tim1CcIrq' class='variant'><span id='Tim1CcIrq.v' class='invisible'><code>Tim1CcIrq</code></span></span><div class='docblock'><p>27 - TIM1 Capture Compare interrupt</p>
+</div><span id='variant.Tim2Irq' class='variant'><span id='Tim2Irq.v' class='invisible'><code>Tim2Irq</code></span></span><div class='docblock'><p>28 - TIM2 global interrupt</p>
+</div><span id='variant.Tim3Irq' class='variant'><span id='Tim3Irq.v' class='invisible'><code>Tim3Irq</code></span></span><div class='docblock'><p>29 - TIM3 global interrupt</p>
+</div><span id='variant.Tim4Irq' class='variant'><span id='Tim4Irq.v' class='invisible'><code>Tim4Irq</code></span></span><div class='docblock'><p>30 - TIM4 global interrupt</p>
+</div><span id='variant.I2c1EvIrq' class='variant'><span id='I2c1EvIrq.v' class='invisible'><code>I2c1EvIrq</code></span></span><div class='docblock'><p>31 - I2C1 event interrupt</p>
+</div><span id='variant.I2c1ErIrq' class='variant'><span id='I2c1ErIrq.v' class='invisible'><code>I2c1ErIrq</code></span></span><div class='docblock'><p>32 - I2C1 error interrupt</p>
+</div><span id='variant.I2c2EvIrq' class='variant'><span id='I2c2EvIrq.v' class='invisible'><code>I2c2EvIrq</code></span></span><div class='docblock'><p>33 - I2C2 event interrupt</p>
+</div><span id='variant.I2c2ErIrq' class='variant'><span id='I2c2ErIrq.v' class='invisible'><code>I2c2ErIrq</code></span></span><div class='docblock'><p>34 - I2C2 error interrupt</p>
+</div><span id='variant.Spi1Irq' class='variant'><span id='Spi1Irq.v' class='invisible'><code>Spi1Irq</code></span></span><div class='docblock'><p>35 - SPI1 global interrupt</p>
+</div><span id='variant.Spi2Irq' class='variant'><span id='Spi2Irq.v' class='invisible'><code>Spi2Irq</code></span></span><div class='docblock'><p>36 - SPI2 global interrupt</p>
+</div><span id='variant.Usart1Irq' class='variant'><span id='Usart1Irq.v' class='invisible'><code>Usart1Irq</code></span></span><div class='docblock'><p>37 - USART1 global interrupt</p>
+</div><span id='variant.Usart2Irq' class='variant'><span id='Usart2Irq.v' class='invisible'><code>Usart2Irq</code></span></span><div class='docblock'><p>38 - USART2 global interrupt</p>
+</div><span id='variant.Usart3Irq' class='variant'><span id='Usart3Irq.v' class='invisible'><code>Usart3Irq</code></span></span><div class='docblock'><p>39 - USART3 global interrupt</p>
+</div><span id='variant.Exti1510Irq' class='variant'><span id='Exti1510Irq.v' class='invisible'><code>Exti1510Irq</code></span></span><div class='docblock'><p>40 - EXTI Line[15:10] interrupts</p>
+</div><span id='variant.RtcalarmIrq' class='variant'><span id='RtcalarmIrq.v' class='invisible'><code>RtcalarmIrq</code></span></span><div class='docblock'><p>41 - RTC Alarms through EXTI line interrupt</p>
+</div><span id='variant.CecIrq' class='variant'><span id='CecIrq.v' class='invisible'><code>CecIrq</code></span></span><div class='docblock'><p>42 - CEC global interrupt</p>
+</div><span id='variant.Tim12Irq' class='variant'><span id='Tim12Irq.v' class='invisible'><code>Tim12Irq</code></span></span><div class='docblock'><p>43 - TIM12 global interrupt</p>
+</div><span id='variant.Tim13Irq' class='variant'><span id='Tim13Irq.v' class='invisible'><code>Tim13Irq</code></span></span><div class='docblock'><p>44 - TIM13 global interrupt</p>
+</div><span id='variant.FsmcIrq' class='variant'><span id='FsmcIrq.v' class='invisible'><code>FsmcIrq</code></span></span><div class='docblock'><p>48 - FSMC global interrupt</p>
+</div><span id='variant.Tim5Irq' class='variant'><span id='Tim5Irq.v' class='invisible'><code>Tim5Irq</code></span></span><div class='docblock'><p>50 - TIM5 global interrupt</p>
+</div><span id='variant.Spi3Irq' class='variant'><span id='Spi3Irq.v' class='invisible'><code>Spi3Irq</code></span></span><div class='docblock'><p>51 - SPI3 global interrupt</p>
+</div><span id='variant.Uart4Irq' class='variant'><span id='Uart4Irq.v' class='invisible'><code>Uart4Irq</code></span></span><div class='docblock'><p>52 - UART4 global interrupt</p>
+</div><span id='variant.Uart5Irq' class='variant'><span id='Uart5Irq.v' class='invisible'><code>Uart5Irq</code></span></span><div class='docblock'><p>53 - UART5 global interrupt</p>
+</div><span id='variant.Tim6DacIrq' class='variant'><span id='Tim6DacIrq.v' class='invisible'><code>Tim6DacIrq</code></span></span><div class='docblock'><p>54 - TIM6 global and DAC underrun interrupts</p>
+</div><span id='variant.Tim7Irq' class='variant'><span id='Tim7Irq.v' class='invisible'><code>Tim7Irq</code></span></span><div class='docblock'><p>55 - TIM7 global interrupt</p>
+</div><span id='variant.Dma2Channel1Irq' class='variant'><span id='Dma2Channel1Irq.v' class='invisible'><code>Dma2Channel1Irq</code></span></span><div class='docblock'><p>56 - DMA2 Channel1 global interrupt</p>
+</div><span id='variant.Dma2Channel2Irq' class='variant'><span id='Dma2Channel2Irq.v' class='invisible'><code>Dma2Channel2Irq</code></span></span><div class='docblock'><p>57 - DMA2 Channel2 global interrupt</p>
+</div><span id='variant.Dma2Channel3Irq' class='variant'><span id='Dma2Channel3Irq.v' class='invisible'><code>Dma2Channel3Irq</code></span></span><div class='docblock'><p>58 - DMA2 Channel3 global interrupt</p>
+</div><span id='variant.Dma2Channel45Irq' class='variant'><span id='Dma2Channel45Irq.v' class='invisible'><code>Dma2Channel45Irq</code></span></span><div class='docblock'><p>59 - DMA2 Channel4 and DMA2 Channel5 global interrupt</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="../../cortex_m/interrupt/trait.Nr.html" title="trait cortex_m::interrupt::Nr">Nr</a> for <a class="enum" href="../../stm32f100xx/interrupt/enum.Interrupt.html" title="enum stm32f100xx::interrupt::Interrupt">Interrupt</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/stm32f100xx/lib.rs.html#863-921' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.nr' class="method"><span id='nr.v' class='invisible'><code>fn <a href='../../cortex_m/interrupt/trait.Nr.html#tymethod.nr' class='fnname'>nr</a>(&amp;self) -&gt; u8</code></span></h4>
+<div class='docblock'><p>Returns the number associated with this interrupt</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "stm32f100xx";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

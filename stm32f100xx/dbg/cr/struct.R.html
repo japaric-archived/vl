@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `R` struct in crate `stm32f100xx`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, R">
+
+    <title>stm32f100xx::dbg::cr::R - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct R</p><div class="block items"><ul><li><a href="#methods">Methods</a></li></ul></div><p class='location'><a href='../../index.html'>stm32f100xx</a>::<wbr><a href='../index.html'>dbg</a>::<wbr><a href='index.html'>cr</a></p><script>window.sidebarCurrent = {name: 'R', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../../index.html'>stm32f100xx</a>::<wbr><a href='../index.html'>dbg</a>::<wbr><a href='index.html'>cr</a>::<wbr><a class="struct" href=''>R</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../../src/stm32f100xx/lib.rs.html#68601-68603' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct R { /* fields omitted */ }</pre><div class='docblock'><p>Value read from the register</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.R.html" title="struct stm32f100xx::dbg::cr::R">R</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/stm32f100xx/lib.rs.html#69209-69435' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.bits' class="method"><span id='bits.v' class='invisible'><code>fn <a href='#method.bits' class='fnname'>bits</a>(&amp;self) -&gt; u32</code></span></h4>
+<div class='docblock'><p>Value of the register as raw bits</p>
+</div><h4 id='method.dbg_sleep' class="method"><span id='dbg_sleep.v' class='invisible'><code>fn <a href='#method.dbg_sleep' class='fnname'>dbg_sleep</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgSleepR.html" title="struct stm32f100xx::dbg::cr::DbgSleepR">DbgSleepR</a></code></span></h4>
+<div class='docblock'><p>Bit 0 - DBG_SLEEP</p>
+</div><h4 id='method.dbg_stop' class="method"><span id='dbg_stop.v' class='invisible'><code>fn <a href='#method.dbg_stop' class='fnname'>dbg_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgStopR.html" title="struct stm32f100xx::dbg::cr::DbgStopR">DbgStopR</a></code></span></h4>
+<div class='docblock'><p>Bit 1 - DBG_STOP</p>
+</div><h4 id='method.dbg_standby' class="method"><span id='dbg_standby.v' class='invisible'><code>fn <a href='#method.dbg_standby' class='fnname'>dbg_standby</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgStandbyR.html" title="struct stm32f100xx::dbg::cr::DbgStandbyR">DbgStandbyR</a></code></span></h4>
+<div class='docblock'><p>Bit 2 - DBG_STANDBY</p>
+</div><h4 id='method.trace_ioen' class="method"><span id='trace_ioen.v' class='invisible'><code>fn <a href='#method.trace_ioen' class='fnname'>trace_ioen</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.TraceIoenR.html" title="struct stm32f100xx::dbg::cr::TraceIoenR">TraceIoenR</a></code></span></h4>
+<div class='docblock'><p>Bit 5 - TRACE_IOEN</p>
+</div><h4 id='method.trace_mode' class="method"><span id='trace_mode.v' class='invisible'><code>fn <a href='#method.trace_mode' class='fnname'>trace_mode</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.TraceModeR.html" title="struct stm32f100xx::dbg::cr::TraceModeR">TraceModeR</a></code></span></h4>
+<div class='docblock'><p>Bits 6:7 - TRACE_MODE</p>
+</div><h4 id='method.dbg_iwdg_stop' class="method"><span id='dbg_iwdg_stop.v' class='invisible'><code>fn <a href='#method.dbg_iwdg_stop' class='fnname'>dbg_iwdg_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgIwdgStopR.html" title="struct stm32f100xx::dbg::cr::DbgIwdgStopR">DbgIwdgStopR</a></code></span></h4>
+<div class='docblock'><p>Bit 8 - DBG_IWDG_STOP</p>
+</div><h4 id='method.dbg_wwdg_stop' class="method"><span id='dbg_wwdg_stop.v' class='invisible'><code>fn <a href='#method.dbg_wwdg_stop' class='fnname'>dbg_wwdg_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgWwdgStopR.html" title="struct stm32f100xx::dbg::cr::DbgWwdgStopR">DbgWwdgStopR</a></code></span></h4>
+<div class='docblock'><p>Bit 9 - DBG_WWDG_STOP</p>
+</div><h4 id='method.dbg_tim1_stop' class="method"><span id='dbg_tim1_stop.v' class='invisible'><code>fn <a href='#method.dbg_tim1_stop' class='fnname'>dbg_tim1_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgTim1StopR.html" title="struct stm32f100xx::dbg::cr::DbgTim1StopR">DbgTim1StopR</a></code></span></h4>
+<div class='docblock'><p>Bit 10 - DBG_TIM1_STOP</p>
+</div><h4 id='method.dbg_tim2_stop' class="method"><span id='dbg_tim2_stop.v' class='invisible'><code>fn <a href='#method.dbg_tim2_stop' class='fnname'>dbg_tim2_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgTim2StopR.html" title="struct stm32f100xx::dbg::cr::DbgTim2StopR">DbgTim2StopR</a></code></span></h4>
+<div class='docblock'><p>Bit 11 - DBG_TIM2_STOP</p>
+</div><h4 id='method.dbg_tim3_stop' class="method"><span id='dbg_tim3_stop.v' class='invisible'><code>fn <a href='#method.dbg_tim3_stop' class='fnname'>dbg_tim3_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgTim3StopR.html" title="struct stm32f100xx::dbg::cr::DbgTim3StopR">DbgTim3StopR</a></code></span></h4>
+<div class='docblock'><p>Bit 12 - DBG_TIM3_STOP</p>
+</div><h4 id='method.dbg_tim4_stop' class="method"><span id='dbg_tim4_stop.v' class='invisible'><code>fn <a href='#method.dbg_tim4_stop' class='fnname'>dbg_tim4_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgTim4StopR.html" title="struct stm32f100xx::dbg::cr::DbgTim4StopR">DbgTim4StopR</a></code></span></h4>
+<div class='docblock'><p>Bit 13 - DBG_TIM4_STOP</p>
+</div><h4 id='method.dbg_i2c1_smbus_timeout' class="method"><span id='dbg_i2c1_smbus_timeout.v' class='invisible'><code>fn <a href='#method.dbg_i2c1_smbus_timeout' class='fnname'>dbg_i2c1_smbus_timeout</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgI2c1SmbusTimeoutR.html" title="struct stm32f100xx::dbg::cr::DbgI2c1SmbusTimeoutR">DbgI2c1SmbusTimeoutR</a></code></span></h4>
+<div class='docblock'><p>Bit 15 - DBG_I2C1_SMBUS_TIMEOUT</p>
+</div><h4 id='method.dbg_i2c2_smbus_timeout' class="method"><span id='dbg_i2c2_smbus_timeout.v' class='invisible'><code>fn <a href='#method.dbg_i2c2_smbus_timeout' class='fnname'>dbg_i2c2_smbus_timeout</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgI2c2SmbusTimeoutR.html" title="struct stm32f100xx::dbg::cr::DbgI2c2SmbusTimeoutR">DbgI2c2SmbusTimeoutR</a></code></span></h4>
+<div class='docblock'><p>Bit 16 - DBG_I2C2_SMBUS_TIMEOUT</p>
+</div><h4 id='method.dbg_tim5_stop' class="method"><span id='dbg_tim5_stop.v' class='invisible'><code>fn <a href='#method.dbg_tim5_stop' class='fnname'>dbg_tim5_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgTim5StopR.html" title="struct stm32f100xx::dbg::cr::DbgTim5StopR">DbgTim5StopR</a></code></span></h4>
+<div class='docblock'><p>Bit 18 - DBG_TIM5_STOP</p>
+</div><h4 id='method.dbg_tim6_stop' class="method"><span id='dbg_tim6_stop.v' class='invisible'><code>fn <a href='#method.dbg_tim6_stop' class='fnname'>dbg_tim6_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgTim6StopR.html" title="struct stm32f100xx::dbg::cr::DbgTim6StopR">DbgTim6StopR</a></code></span></h4>
+<div class='docblock'><p>Bit 19 - DBG_TIM6_STOP</p>
+</div><h4 id='method.dbg_tim7_stop' class="method"><span id='dbg_tim7_stop.v' class='invisible'><code>fn <a href='#method.dbg_tim7_stop' class='fnname'>dbg_tim7_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgTim7StopR.html" title="struct stm32f100xx::dbg::cr::DbgTim7StopR">DbgTim7StopR</a></code></span></h4>
+<div class='docblock'><p>Bit 20 - DBG_TIM7_STOP</p>
+</div><h4 id='method.dbg_tim15_stop' class="method"><span id='dbg_tim15_stop.v' class='invisible'><code>fn <a href='#method.dbg_tim15_stop' class='fnname'>dbg_tim15_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgTim15StopR.html" title="struct stm32f100xx::dbg::cr::DbgTim15StopR">DbgTim15StopR</a></code></span></h4>
+<div class='docblock'><p>Bit 22 - DBG_TIM15_STOP</p>
+</div><h4 id='method.dbg_tim16_stop' class="method"><span id='dbg_tim16_stop.v' class='invisible'><code>fn <a href='#method.dbg_tim16_stop' class='fnname'>dbg_tim16_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgTim16StopR.html" title="struct stm32f100xx::dbg::cr::DbgTim16StopR">DbgTim16StopR</a></code></span></h4>
+<div class='docblock'><p>Bit 23 - DBG_TIM16_STOP</p>
+</div><h4 id='method.dbg_tim17_stop' class="method"><span id='dbg_tim17_stop.v' class='invisible'><code>fn <a href='#method.dbg_tim17_stop' class='fnname'>dbg_tim17_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgTim17StopR.html" title="struct stm32f100xx::dbg::cr::DbgTim17StopR">DbgTim17StopR</a></code></span></h4>
+<div class='docblock'><p>Bit 24 - DBG_TIM17_STOP</p>
+</div><h4 id='method.dbg_tim12_stop' class="method"><span id='dbg_tim12_stop.v' class='invisible'><code>fn <a href='#method.dbg_tim12_stop' class='fnname'>dbg_tim12_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgTim12StopR.html" title="struct stm32f100xx::dbg::cr::DbgTim12StopR">DbgTim12StopR</a></code></span></h4>
+<div class='docblock'><p>Bit 25 - DBG_TIM12_STOP</p>
+</div><h4 id='method.dbg_tim13_stop' class="method"><span id='dbg_tim13_stop.v' class='invisible'><code>fn <a href='#method.dbg_tim13_stop' class='fnname'>dbg_tim13_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgTim13StopR.html" title="struct stm32f100xx::dbg::cr::DbgTim13StopR">DbgTim13StopR</a></code></span></h4>
+<div class='docblock'><p>Bit 26 - DBG_TIM13_STOP</p>
+</div><h4 id='method.dbg_tim14_stop' class="method"><span id='dbg_tim14_stop.v' class='invisible'><code>fn <a href='#method.dbg_tim14_stop' class='fnname'>dbg_tim14_stop</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/dbg/cr/struct.DbgTim14StopR.html" title="struct stm32f100xx::dbg::cr::DbgTim14StopR">DbgTim14StopR</a></code></span></h4>
+<div class='docblock'><p>Bit 27 - DBG_TIM14_STOP</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../";
+        window.currentCrate = "stm32f100xx";
+    </script>
+    <script src="../../../main.js"></script>
+    <script defer src="../../../search-index.js"></script>
+</body>
+</html>

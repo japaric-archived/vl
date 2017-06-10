@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Error","An error"],["Timer","Periodic timer"]],"type":[["Result","Specialized `Result` type"]]});

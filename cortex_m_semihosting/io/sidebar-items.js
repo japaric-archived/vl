@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["ewrite","Write a `buffer` to the host's stderr"],["ewrite_fmt","Write `fmt::Arguments` to the host's stderr"],["ewrite_str","Write a `string` to the host's stderr"],["write","Write a `buffer` to the host's stdout"],["write_fmt","Write `fmt::Arguments` to the host's stdout"],["write_str","Write a `string` to the host's stdout"]]});

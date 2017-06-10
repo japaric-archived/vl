@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["BusyR","Value of the field"],["DualfR","Value of the field"],["GencallR","Value of the field"],["MslR","Value of the field"],["PecR","Value of the field"],["R","Value read from the register"],["SmbdefaultR","Value of the field"],["SmbhostR","Value of the field"],["TraR","Value of the field"]]});

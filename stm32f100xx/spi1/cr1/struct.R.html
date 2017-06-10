@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `R` struct in crate `stm32f100xx`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, R">
+
+    <title>stm32f100xx::spi1::cr1::R - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct R</p><div class="block items"><ul><li><a href="#methods">Methods</a></li></ul></div><p class='location'><a href='../../index.html'>stm32f100xx</a>::<wbr><a href='../index.html'>spi1</a>::<wbr><a href='index.html'>cr1</a></p><script>window.sidebarCurrent = {name: 'R', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../../index.html'>stm32f100xx</a>::<wbr><a href='../index.html'>spi1</a>::<wbr><a href='index.html'>cr1</a>::<wbr><a class="struct" href=''>R</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../../src/stm32f100xx/lib.rs.html#58115-58117' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct R { /* fields omitted */ }</pre><div class='docblock'><p>Value read from the register</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.R.html" title="struct stm32f100xx::spi1::cr1::R">R</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../../src/stm32f100xx/lib.rs.html#58515-58661' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.bits' class="method"><span id='bits.v' class='invisible'><code>fn <a href='#method.bits' class='fnname'>bits</a>(&amp;self) -&gt; u32</code></span></h4>
+<div class='docblock'><p>Value of the register as raw bits</p>
+</div><h4 id='method.bidimode' class="method"><span id='bidimode.v' class='invisible'><code>fn <a href='#method.bidimode' class='fnname'>bidimode</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.BidimodeR.html" title="struct stm32f100xx::spi1::cr1::BidimodeR">BidimodeR</a></code></span></h4>
+<div class='docblock'><p>Bit 15 - Bidirectional data mode enable</p>
+</div><h4 id='method.bidioe' class="method"><span id='bidioe.v' class='invisible'><code>fn <a href='#method.bidioe' class='fnname'>bidioe</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.BidioeR.html" title="struct stm32f100xx::spi1::cr1::BidioeR">BidioeR</a></code></span></h4>
+<div class='docblock'><p>Bit 14 - Output enable in bidirectional mode</p>
+</div><h4 id='method.crcen' class="method"><span id='crcen.v' class='invisible'><code>fn <a href='#method.crcen' class='fnname'>crcen</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.CrcenR.html" title="struct stm32f100xx::spi1::cr1::CrcenR">CrcenR</a></code></span></h4>
+<div class='docblock'><p>Bit 13 - Hardware CRC calculation enable</p>
+</div><h4 id='method.crcnext' class="method"><span id='crcnext.v' class='invisible'><code>fn <a href='#method.crcnext' class='fnname'>crcnext</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.CrcnextR.html" title="struct stm32f100xx::spi1::cr1::CrcnextR">CrcnextR</a></code></span></h4>
+<div class='docblock'><p>Bit 12 - CRC transfer next</p>
+</div><h4 id='method.dff' class="method"><span id='dff.v' class='invisible'><code>fn <a href='#method.dff' class='fnname'>dff</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.DffR.html" title="struct stm32f100xx::spi1::cr1::DffR">DffR</a></code></span></h4>
+<div class='docblock'><p>Bit 11 - Data frame format</p>
+</div><h4 id='method.rxonly' class="method"><span id='rxonly.v' class='invisible'><code>fn <a href='#method.rxonly' class='fnname'>rxonly</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.RxonlyR.html" title="struct stm32f100xx::spi1::cr1::RxonlyR">RxonlyR</a></code></span></h4>
+<div class='docblock'><p>Bit 10 - Receive only</p>
+</div><h4 id='method.ssm' class="method"><span id='ssm.v' class='invisible'><code>fn <a href='#method.ssm' class='fnname'>ssm</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.SsmR.html" title="struct stm32f100xx::spi1::cr1::SsmR">SsmR</a></code></span></h4>
+<div class='docblock'><p>Bit 9 - Software slave management</p>
+</div><h4 id='method.ssi' class="method"><span id='ssi.v' class='invisible'><code>fn <a href='#method.ssi' class='fnname'>ssi</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.SsiR.html" title="struct stm32f100xx::spi1::cr1::SsiR">SsiR</a></code></span></h4>
+<div class='docblock'><p>Bit 8 - Internal slave select</p>
+</div><h4 id='method.lsbfirst' class="method"><span id='lsbfirst.v' class='invisible'><code>fn <a href='#method.lsbfirst' class='fnname'>lsbfirst</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.LsbfirstR.html" title="struct stm32f100xx::spi1::cr1::LsbfirstR">LsbfirstR</a></code></span></h4>
+<div class='docblock'><p>Bit 7 - Frame format</p>
+</div><h4 id='method.spe' class="method"><span id='spe.v' class='invisible'><code>fn <a href='#method.spe' class='fnname'>spe</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.SpeR.html" title="struct stm32f100xx::spi1::cr1::SpeR">SpeR</a></code></span></h4>
+<div class='docblock'><p>Bit 6 - SPI enable</p>
+</div><h4 id='method.br' class="method"><span id='br.v' class='invisible'><code>fn <a href='#method.br' class='fnname'>br</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.BrR.html" title="struct stm32f100xx::spi1::cr1::BrR">BrR</a></code></span></h4>
+<div class='docblock'><p>Bits 3:5 - Baud rate control</p>
+</div><h4 id='method.mstr' class="method"><span id='mstr.v' class='invisible'><code>fn <a href='#method.mstr' class='fnname'>mstr</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.MstrR.html" title="struct stm32f100xx::spi1::cr1::MstrR">MstrR</a></code></span></h4>
+<div class='docblock'><p>Bit 2 - Master selection</p>
+</div><h4 id='method.cpol' class="method"><span id='cpol.v' class='invisible'><code>fn <a href='#method.cpol' class='fnname'>cpol</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.CpolR.html" title="struct stm32f100xx::spi1::cr1::CpolR">CpolR</a></code></span></h4>
+<div class='docblock'><p>Bit 1 - Clock polarity</p>
+</div><h4 id='method.cpha' class="method"><span id='cpha.v' class='invisible'><code>fn <a href='#method.cpha' class='fnname'>cpha</a>(&amp;self) -&gt; <a class="struct" href="../../../stm32f100xx/spi1/cr1/struct.CphaR.html" title="struct stm32f100xx::spi1::cr1::CphaR">CphaR</a></code></span></h4>
+<div class='docblock'><p>Bit 0 - Clock phase</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../";
+        window.currentCrate = "stm32f100xx";
+    </script>
+    <script src="../../../main.js"></script>
+    <script defer src="../../../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `RegisterBlock` struct in crate `stm32f100xx`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, RegisterBlock">
+
+    <title>stm32f100xx::afio::RegisterBlock - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct RegisterBlock</p><div class="block items"><ul><li><a href="#fields">Fields</a></li></ul></div><p class='location'><a href='../index.html'>stm32f100xx</a>::<wbr><a href='index.html'>afio</a></p><script>window.sidebarCurrent = {name: 'RegisterBlock', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>stm32f100xx</a>::<wbr><a href='index.html'>afio</a>::<wbr><a class="struct" href=''>RegisterBlock</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/stm32f100xx/lib.rs.html#16932-16948' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct RegisterBlock {
+    pub evcr: <a class="struct" href="../../stm32f100xx/afio/struct.Evcr.html" title="struct stm32f100xx::afio::Evcr">Evcr</a>,
+    pub mapr: <a class="struct" href="../../stm32f100xx/afio/struct.Mapr.html" title="struct stm32f100xx::afio::Mapr">Mapr</a>,
+    pub exticr1: <a class="struct" href="../../stm32f100xx/afio/struct.Exticr1.html" title="struct stm32f100xx::afio::Exticr1">Exticr1</a>,
+    pub exticr2: <a class="struct" href="../../stm32f100xx/afio/struct.Exticr2.html" title="struct stm32f100xx::afio::Exticr2">Exticr2</a>,
+    pub exticr3: <a class="struct" href="../../stm32f100xx/afio/struct.Exticr3.html" title="struct stm32f100xx::afio::Exticr3">Exticr3</a>,
+    pub exticr4: <a class="struct" href="../../stm32f100xx/afio/struct.Exticr4.html" title="struct stm32f100xx::afio::Exticr4">Exticr4</a>,
+    pub mapr2: <a class="struct" href="../../stm32f100xx/afio/struct.Mapr2.html" title="struct stm32f100xx::afio::Mapr2">Mapr2</a>,
+    // some fields omitted
+}</pre><div class='docblock'><p>Register block</p>
+</div><h2 id='fields' class='fields'>Fields</h2><span id='structfield.evcr' class="structfield">
+                           <span id='evcr.v' class='invisible'>
+                           <code>evcr: <a class="struct" href="../../stm32f100xx/afio/struct.Evcr.html" title="struct stm32f100xx::afio::Evcr">Evcr</a></code>
+                           </span></span><div class='docblock'><p>0x00 - Event Control Register (AFIO_EVCR)</p>
+</div><span id='structfield.mapr' class="structfield">
+                           <span id='mapr.v' class='invisible'>
+                           <code>mapr: <a class="struct" href="../../stm32f100xx/afio/struct.Mapr.html" title="struct stm32f100xx::afio::Mapr">Mapr</a></code>
+                           </span></span><div class='docblock'><p>0x04 - AF remap and debug I/O configuration register (AFIO_MAPR)</p>
+</div><span id='structfield.exticr1' class="structfield">
+                           <span id='exticr1.v' class='invisible'>
+                           <code>exticr1: <a class="struct" href="../../stm32f100xx/afio/struct.Exticr1.html" title="struct stm32f100xx::afio::Exticr1">Exticr1</a></code>
+                           </span></span><div class='docblock'><p>0x08 - External interrupt configuration register 1 (AFIO_EXTICR1)</p>
+</div><span id='structfield.exticr2' class="structfield">
+                           <span id='exticr2.v' class='invisible'>
+                           <code>exticr2: <a class="struct" href="../../stm32f100xx/afio/struct.Exticr2.html" title="struct stm32f100xx::afio::Exticr2">Exticr2</a></code>
+                           </span></span><div class='docblock'><p>0x0c - External interrupt configuration register 2 (AFIO_EXTICR2)</p>
+</div><span id='structfield.exticr3' class="structfield">
+                           <span id='exticr3.v' class='invisible'>
+                           <code>exticr3: <a class="struct" href="../../stm32f100xx/afio/struct.Exticr3.html" title="struct stm32f100xx::afio::Exticr3">Exticr3</a></code>
+                           </span></span><div class='docblock'><p>0x10 - External interrupt configuration register 3 (AFIO_EXTICR3)</p>
+</div><span id='structfield.exticr4' class="structfield">
+                           <span id='exticr4.v' class='invisible'>
+                           <code>exticr4: <a class="struct" href="../../stm32f100xx/afio/struct.Exticr4.html" title="struct stm32f100xx::afio::Exticr4">Exticr4</a></code>
+                           </span></span><div class='docblock'><p>0x14 - External interrupt configuration register 4 (AFIO_EXTICR4)</p>
+</div><span id='structfield.mapr2' class="structfield">
+                           <span id='mapr2.v' class='invisible'>
+                           <code>mapr2: <a class="struct" href="../../stm32f100xx/afio/struct.Mapr2.html" title="struct stm32f100xx::afio::Mapr2">Mapr2</a></code>
+                           </span></span><div class='docblock'><p>0x1c - AF remap and debug I/O configuration register</p>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "stm32f100xx";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

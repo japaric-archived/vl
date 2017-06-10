@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="Source to the Rust file `src/led.rs`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang">
+
+    <title>led.rs.html -- source</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc source">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content"><pre class="line-numbers"><span id="1"> 1</span>
+<span id="2"> 2</span>
+<span id="3"> 3</span>
+<span id="4"> 4</span>
+<span id="5"> 5</span>
+<span id="6"> 6</span>
+<span id="7"> 7</span>
+<span id="8"> 8</span>
+<span id="9"> 9</span>
+<span id="10">10</span>
+<span id="11">11</span>
+<span id="12">12</span>
+<span id="13">13</span>
+<span id="14">14</span>
+<span id="15">15</span>
+<span id="16">16</span>
+<span id="17">17</span>
+<span id="18">18</span>
+<span id="19">19</span>
+<span id="20">20</span>
+<span id="21">21</span>
+<span id="22">22</span>
+<span id="23">23</span>
+<span id="24">24</span>
+<span id="25">25</span>
+<span id="26">26</span>
+<span id="27">27</span>
+<span id="28">28</span>
+<span id="29">29</span>
+<span id="30">30</span>
+<span id="31">31</span>
+<span id="32">32</span>
+<span id="33">33</span>
+<span id="34">34</span>
+<span id="35">35</span>
+<span id="36">36</span>
+<span id="37">37</span>
+<span id="38">38</span>
+<span id="39">39</span>
+<span id="40">40</span>
+<span id="41">41</span>
+<span id="42">42</span>
+<span id="43">43</span>
+<span id="44">44</span>
+<span id="45">45</span>
+<span id="46">46</span>
+<span id="47">47</span>
+<span id="48">48</span>
+</pre><pre class="rust ">
+<span class="doccomment">//! User LEDs</span>
+
+<span class="kw">use</span> <span class="ident">stm32f100xx</span>::{<span class="ident">GPIOC</span>, <span class="ident">Gpioc</span>, <span class="ident">Rcc</span>};
+
+<span class="doccomment">/// Blue LED (PC8)</span>
+<span class="kw">pub</span> <span class="kw">static</span> <span class="ident">BLUE</span>: <span class="ident">Led</span> <span class="op">=</span> <span class="ident">Led</span> { <span class="ident">i</span>: <span class="number">8</span> };
+
+<span class="doccomment">/// Green LED (PC9)</span>
+<span class="kw">pub</span> <span class="kw">static</span> <span class="ident">GREEN</span>: <span class="ident">Led</span> <span class="op">=</span> <span class="ident">Led</span> { <span class="ident">i</span>: <span class="number">9</span> };
+
+<span class="doccomment">/// An LED</span>
+<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">Led</span> {
+    <span class="ident">i</span>: <span class="ident">u8</span>,
+}
+
+<span class="kw">impl</span> <span class="ident">Led</span> {
+    <span class="doccomment">/// Turns off the LED</span>
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">off</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) {
+        <span class="comment">// NOTE(safe) atomic write</span>
+        <span class="kw">unsafe</span> { (<span class="kw-2">*</span><span class="ident">GPIOC</span>.<span class="ident">get</span>()).<span class="ident">bsrr</span>.<span class="ident">write</span>(<span class="op">|</span><span class="ident">w</span><span class="op">|</span> <span class="ident">w</span>.<span class="ident">bits</span>(<span class="number">1</span> <span class="op">&lt;&lt;</span> (<span class="self">self</span>.<span class="ident">i</span> <span class="op">+</span> <span class="number">16</span>))) }
+    }
+
+    <span class="doccomment">/// Turns on the LED</span>
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">on</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) {
+        <span class="comment">// NOTE(safe) atomic write</span>
+        <span class="kw">unsafe</span> { (<span class="kw-2">*</span><span class="ident">GPIOC</span>.<span class="ident">get</span>()).<span class="ident">bsrr</span>.<span class="ident">write</span>(<span class="op">|</span><span class="ident">w</span><span class="op">|</span> <span class="ident">w</span>.<span class="ident">bits</span>(<span class="number">1</span> <span class="op">&lt;&lt;</span> <span class="self">self</span>.<span class="ident">i</span>)) }
+    }
+}
+
+<span class="doccomment">/// Initialize the LED driving pins</span>
+<span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">init</span>(<span class="ident">gpioc</span>: <span class="kw-2">&amp;</span><span class="ident">Gpioc</span>, <span class="ident">rcc</span>: <span class="kw-2">&amp;</span><span class="ident">Rcc</span>) {
+    <span class="comment">// Power up peripherals</span>
+    <span class="ident">rcc</span>.<span class="ident">apb2enr</span>.<span class="ident">modify</span>(<span class="op">|</span>_, <span class="ident">w</span><span class="op">|</span> <span class="kw">unsafe</span> { <span class="ident">w</span>.<span class="ident">iopcen</span>().<span class="ident">bits</span>(<span class="number">1</span>) });
+
+    <span class="comment">// Configure PC8 and PC9 as general purpose, push pull outputs</span>
+    <span class="ident">gpioc</span>.<span class="ident">crh</span>.<span class="ident">modify</span>(
+        <span class="op">|</span>_, <span class="ident">w</span><span class="op">|</span> <span class="kw">unsafe</span> {
+            <span class="ident">w</span>.<span class="ident">mode8</span>()
+                .<span class="ident">bits</span>(<span class="number">0b01</span>)
+                .<span class="ident">cnf8</span>()
+                .<span class="ident">bits</span>(<span class="number">0b00</span>)
+                .<span class="ident">mode9</span>()
+                .<span class="ident">bits</span>(<span class="number">0b01</span>)
+                .<span class="ident">cnf9</span>()
+                .<span class="ident">bits</span>(<span class="number">0b00</span>)
+        }
+    )
+}
+</pre>
+</section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "vl";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
