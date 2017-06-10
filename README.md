@@ -2,6 +2,8 @@
 
 > Board Support Crate for the STM32VLDISCOVERY
 
+# [Documentation](https://japaric.github.io/vl/vl/index.html)
+
 # License
 
 Licensed under either of

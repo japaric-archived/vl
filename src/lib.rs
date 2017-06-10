@@ -8,11 +8,11 @@
 //!
 //! # Usage
 //!
-//! Follow `cortex-m-quickstart` [instructions][i] but remove the `memory.x`
-//! linker script and the `build.rs` build script file as part of the
-//! configuration of the quickstart crate.
+//! Follow `cortex-m-quickstart` [instructions][i], and add this crate as a
+//! dependency and remove the `memory.x` linker script and the `build.rs` build
+//! script file as part of the configuration of the quickstart crate.
 //!
-//! [i]: https://docs.rs/cortex-m-quickstart/0.1.0/cortex_m_quickstart/
+//! [i]: https://docs.rs/cortex-m-quickstart/0.1.8/cortex_m_quickstart/
 
 #![deny(missing_docs)]
 #![deny(warnings)]
