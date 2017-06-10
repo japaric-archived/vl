@@ -4,6 +4,8 @@ use core::u16;
 
 use cast::{u16, u32};
 use stm32f100xx::{Rcc, Tim7};
+use futures::future;
+use futures::{Async, Future};
 
 use frequency;
 
@@ -11,8 +13,10 @@ use frequency;
 pub type Result<T> = ::core::result::Result<T, Error>;
 
 /// An error
-pub struct Error {
-    _0: (),
+pub enum Error {
+    WouldBlock,
+    #[doc(hidden)]
+    _Extensible,
 }
 
 /// Periodic timer
@@ -41,14 +45,14 @@ impl<'a> Timer<'a> {
         tim7.dier.write(|w| unsafe { w.uie().bits(1) });
     }
 
-    /// Clears the update flag
+    /// Waits for a timeout
     ///
     /// Returns an `Err` if no update event has occurred
-    pub fn clear_update_flag(&self) -> Result<()> {
+    pub fn wait(&self) -> Result<()> {
         let tim7 = self.0;
 
         if tim7.sr.read().uif().bits() == 0 {
-            Err(Error { _0: () })
+            Err(Error::WouldBlock)
         } else {
             tim7.sr.write(|w| w);
             Ok(())
@@ -68,4 +72,9 @@ impl<'a> Timer<'a> {
 
         tim7.cr1.write(|w| unsafe { w.cen().bits(1) });
     }
+}
+
+/// Waits for timeout (future style)
+pub fn wait<'a>(timer: Timer<'a>) -> impl Future<Item = (), Error = Error> + 'a {
+    future::poll_fn(move || Ok(Async::Ready(try_nb!(timer.wait()))))
 }

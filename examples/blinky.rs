@@ -68,7 +68,7 @@ fn periodic(mut task: Tim7Irq, ref prio: P1, ref thr: T1) {
     let tim7 = TIM7.access(prio, thr);
     let timer = Timer(&tim7);
 
-    if timer.clear_update_flag().is_ok() {
+    if timer.wait().is_ok() {
         let state = STATE.borrow_mut(&mut task);
 
         *state = !*state;
