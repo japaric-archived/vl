@@ -2,6 +2,12 @@
 
 > Board Support Crate for the STM32VLDISCOVERY
 
+## Usage example
+
+```
+$ xargo build --example led
+```
+
 # License
 
 Licensed under either of
